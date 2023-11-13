@@ -1,0 +1,67 @@
+h1 {
+    text-align: center;
+}
+.container {
+    /*(21) rgb(0,0,0) is another way to create colors. NOTE: first number is red, second is green and third is blue.*/
+    background-color: rgb(255, 255, 255);
+    /*(25) in padding the first number represents top and bottom. second numer represent left and right*/
+    padding: 10px 0;
+}
+.marker {
+    /*(12) We need to add width and height. Without them, nothing will show*/
+    height: 25px;
+    width: 200px;
+    /*(13) We can set all 4 margins by just using one "margin" property to auto (15) Add px to separate divs*/
+    margin: 10px auto;
+}
+.cap {
+    width: 60px;
+    height: 25px;
+}
+.sleeve {
+    width: 110px;
+    height: 25px;
+    /*(75) We can also create opacity by using alpha channel which is the 4th value on a "rgba" function*/
+    background-color: rgba(255, 255, 255, 0.5);
+    /*(73) The property "opacity" changes how transparent something is. Note: values can go from 0 (0%) to 1.0 (100%)
+    opacity: 0.5;*/
+    /*(79) We can control borders width and height by using the following property and value
+    border-left-width: 10px;*/
+    /*(80) To make border solid we need to use the following property and value
+    border-left-style: solid;*/
+    /*(81) We can add color to border using the following property
+    border-left-color: black;*/
+    /*(82) The "border-left" property already includes width, style and color, so we can just use it to clean code (83) value "double" makes two lines*/
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+}
+/*(78) In order to put both divs cap and sleeve on the same line we have to set a rule using "display=inline-block" */
+.cap, .sleeve{
+    display: inline-block;
+}
+.red {
+    /*(22) each rgb value goes from 0 to 255. Note: 0 means black and 255 is the actual color
+    background-color: rgba(255, 0, 0);*/
+    /*(49) to create gradients we need to change the property to "background"* (50) to add a gradient we use the linear-gradient property. Also first value is the direction of the separation (54) We can add a percentage next to the color to say that color needs to take an specific space in the gradient
+    background: linear-gradient(180deg, rgb(122,74,14) 0%, rgb(245,62,113) 50%, rgb(162,27,27) 100%);*/
+    /*(64) The "linear-gradient" property already calculate the colors to be 0%,50%,100%, so in this we removed the color stops*/
+    background: linear-gradient(rgb(122,74,14), rgb(245,62,113), rgb(162,27,27));
+    /*(86) We can add a shadow behind element by using "box-shadow" NOTE: the values are the positions x y color*/
+    box-shadow: 0px 0px 20px 0px rgba(83, 14, 14, 0.8);
+
+}
+.green {
+    /*(46) We can also express colors with hexadecimal values. This value has 6 characters from 0-9 and A-F. NOTE: 00 is 0% and FF 100%
+    background-color: #007F00;
+    background: linear-gradient(180deg, #55680D, #71F53E, #116c31);*/
+    /*(65) The gradient direction is automatically set to 180deg, so we wont use it in this case*/
+    background: linear-gradient(#55680D, #71F53E, #116c31);
+    /*(88) we can add a blurRadius which is the third value to change the shape of the box-shadow*/
+    box-shadow: 0px 0px 20px 0px #3B7E20CC;
+}
+.blue {
+    /*(48) Another way to express colors is using HSL or hue:red is at 0 degrees, green is at 120 degrees, and blue is at 240 degrees; saturation: is the intensity of a color from 0%, or gray, to 100% for pure color; and lightness: is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral
+    background-color: hsl(240, 100%, 50%);*/
+    background: linear-gradient(hsl(186,76%,16%), hsl(223,90%,60%), hsl(240,56%,42%));
+    /*(89) We can expand the shadox by adding a fourth value*/
+    box-shadow: 0px 0px 20px 0px hsla(223, 59%, 31%, 0.8);
+}
