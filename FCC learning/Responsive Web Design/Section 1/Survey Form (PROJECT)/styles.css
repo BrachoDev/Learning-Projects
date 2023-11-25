@@ -1,0 +1,56 @@
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: 900;
+}
+.header p {
+    text-decoration: underline;
+}
+h1 {
+    margin-bottom: 20px;
+}
+body {
+    background-image: url(https://images8.alphacoders.com/115/1156263.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+}
+.content-box {
+    background-color: rgba(94, 37, 23, 0.623);
+    max-width: 700px;
+    min-height: 800px;
+    color: rgb(245, 242, 238);
+    font-size: large;
+    border-radius: 15px;
+    margin: auto;
+    padding: 20px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+legend {
+    margin-bottom: 8px;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+form button {
+    background-color: rgb(245, 242, 238);
+    color: rgba(94, 37, 23, 0.623);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: large; 
+}

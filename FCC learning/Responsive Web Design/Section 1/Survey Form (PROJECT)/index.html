@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact Fans Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Genshin Impact Survey Form (by Fans)</h1>
+        <p id="description">Survey project created by BrachoDev</p>
+    </header>
+    <form class="content-box" id="survey-form" action="none-yet">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input name="name" id="name" type="text" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input name="email" id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label id="number-label" for="number">Age</label>
+            <input name="number" id="number" type="number" placeholder="Age" required min="16" max="100">
+        </div>
+        <div class="form-group">
+            <label for="dropdown">Which region do you like the most?</label>
+            <select id="dropdown" name="region">
+                <option disabled selected value="select">Select</option>
+                <option value="mondstadt">Mondstadt</option>
+                <option value="liyue">Liyue</option>
+                <option value="inazuma">Inazuma</option>
+                <option value="fontaine">Fontaine</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <legend>Would you recommend Genshin Impact to a friend?</legend>
+            <label>
+                <input name="user-recommend" value="definitely" type="radio" checked> Definitely
+            </label>
+            <label>
+                <input name="user-recommend" value="maybe" type="radio"> Maybe
+            </label>
+            <label>
+                <input name="user-recommend" value="not-sure" type="radio"> Not sure
+            </label>
+        </div>
+        <div class="form-group">
+            <p>What would you like to see improved?<span class="clue"> (check all that apply)</span></p>
+            <label>
+                <input name="improvement" value="combat" type="checkbox"> Combat
+            </label>
+            <label>
+                <input name="improvement" value="characters" type="checkbox"> Characters
+            </label>
+            <label>
+                <input name="improvement" value="exploration" type="checkbox"> Exploration
+            </label>
+            <label>
+                <input name="improvement" value="story" type="checkbox"> Story
+            </label>
+            <label>
+                <input name="improvement" value="rewards" type="checkbox"> Rewards
+            </label>
+        </div>
+        <div class="form-group">
+            <label for="comments">Any comments or suggestions?</label>
+            <textarea id="comments" name="comment" placeholder="Enter your comment here..."></textarea>
+        </div>
+        <div class="form-group">
+            <button type="submit" id="submit">Submit</button>
+        </div>
+    </form>
+</body>
+</html>

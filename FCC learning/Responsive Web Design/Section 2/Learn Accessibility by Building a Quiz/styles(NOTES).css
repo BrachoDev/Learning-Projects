@@ -1,0 +1,38 @@
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+  }
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+}
+
+#logo {
+    /*(8) this is a "PATH" which allows to modify image without changing the resolution. Currently, it is set to have a max with of 100px and it will grow 18% of the viewport*/
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+    h1 {
+        color: #f1be32;
+        font-size: min(5vw, 1.2em);
+    }
+
+    nav {
+        width: 50%;
+        max-width: 300px;
+        height: 50px;
+      }
+
+/*(13) Use selector ">" to target only the elements that we specify after it*/
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+}

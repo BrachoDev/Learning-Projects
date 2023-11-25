@@ -1,0 +1,104 @@
+/*(11) THis is the format to style stuff "text-align" property changes the alignment of text (13) We can change multiple element by diving them with commas */
+h1, h2, p {
+    text-align: center;
+}
+/*(18) Use property "background-color" to change the color of background*/
+/*(62) use "font-size" to change text's size */
+h1{
+    font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
+}
+h2 {
+    font-size: 30px;
+}
+/*(60) Use "font-style" to change the text's style*/
+.established {
+    font-style: italic;
+}
+body {
+    /* (28) use "background-image" to add an image to background*/
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    /*(57) To change the font of the text use "font-family"*/
+    font-family: sans-serif;
+    padding: 20px;
+}
+/*(21) Use property "#" to select an specific id attribute from HTML. (26) We can also style div using class selector Example: .menu {} NOTE: Add a "class" attribute to the HTML file that we are styling*/
+.menu {
+    /*(24) Value can be presented in px or %*/
+    width: 80%;
+    background-color: burlywood;
+    /*(25) to center a div we can set margins right and left to auto*/
+    margin-left: auto;
+    margin-right: auto;
+    /*(53) To add space between the text and the border of the rectangle we can use padding properties
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;*/
+    /*(55) If we want all 4 side to have padding we can just use "padding"*/
+    padding: 20px;
+    /*(56) to prevent the word to be too separate from each other we can us a "max-width" property to keep it at a max width*/
+    max-width: 500px;
+}
+img {
+    /*(89) <img> behave as inline elements, so inorder to make them behave as inline elements use display:block; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    /*(91) We can reduce space by adding a minus value. In this example, we reduce the space between <h2> and <img>*/
+    margin-top: -25px;
+}
+hr {
+    /*(67) Use property height to change the height of element. In this case we made the line thicker*/
+    height: 2px;
+    background-color: brown;
+    /*(69) Use "border-color" to change the color of borders*/
+    border-color: brown;
+}
+h1, h2 {
+    /*(59) We can add multiple font in case that one of the fonts do not work. This is similar to the "alt" attribute in HTML*/
+    font-family: Impact, serif;
+}
+/*(51) We can continue adding selector by divinding them with a comma */
+.flavor, .dessert {
+    text-align: left;
+    width:75%;
+}
+.price {
+    text-align: right;
+    width:25%;
+}
+/*(37) This is how we put both <p> elements in one line using "display: inline-block;" */
+.item p {
+    display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+.bottom-line {
+    margin-top: 25px;
+}
+/*FOOTER*/
+footer {
+    font-size: 14px;
+}
+.address {
+    margin-bottom: 5px;
+  }
+/*(79) to change the color of link use selector "a" and property "color"*/
+a {
+    color:black;
+}
+/*(80) This is how to style a link after it is selected. This uses a "pseudo-selector" */
+a:visited {
+    color: black;
+}
+/*(81) This is how to style a link when we put the mouse around the link. This uses a different type of "pseudo-selector*/
+a:hover {
+    color: brown;
+}
+/*(82) This is how to change the color of link when it is being clicked*/
+a:active {
+    color: brown;
+}
