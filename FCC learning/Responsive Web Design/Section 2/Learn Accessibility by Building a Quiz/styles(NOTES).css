@@ -1,0 +1,193 @@
+
+/*(67) @media is a at-rule that allows to apply styles based on the device, media or users preferences*/
+@media (prefers-reduced-motion: no-preference){
+    * {
+        /*(66) scroll-behavior makes the page move smoother when it scrolls*/
+        scroll-behavior: smooth;
+    }
+}
+
+body {
+    background: #f5f6f7;
+    color: #1b1b32;
+    font-family: Helvetica;
+    margin: 0;
+  }
+
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #1b1b32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+
+#logo {
+    /*(8) this is a "PATH" which allows to modify image without changing the resolution. Currently, it is set to have a max with of 100px and it will grow 18% of the viewport*/
+    width: max(100px, 18vw);
+    background-color: #0a0a23;
+    aspect-ratio: 35 / 4;
+    padding: 0.4rem;
+}
+
+h1 {
+    color: #f1be32;
+    font-size: min(5vw, 1.2em);
+    text-align: center;
+}
+
+main {
+    padding-top: 25px;
+}
+
+nav {
+    width: 50%;
+    max-width: 300px;
+    height: 50px;
+}
+
+/*(13) Use selector ">" to target only the elements that we specify after it*/
+nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-inline-start: 0;
+    margin-block: 0;
+    height: 100%;
+}
+
+nav > ul > li {
+    color: #dfdfe2;
+    margin: 0 0.2rem;
+    padding: 0.2rem;
+    display: block;
+}
+
+nav li:hover {
+    background-color: #dfdfe2;
+    color: #1b1b32;
+    cursor: pointer;
+}
+
+li > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+section {
+    width: 80%;
+    margin: 0 auto 10px auto;
+    max-width: 600px;
+}
+
+h1, h2 {
+    font-family: Verdana, Tahoma;
+}
+
+h2 {
+    border-bottom: 4px solid #dfdfe2;
+    margin-top: 0;
+    padding-top: 60px;
+}
+
+.info {
+    padding: 10px 0 0 5px;
+}
+
+.formrow {
+    margin-top: 30px;
+    padding: 0px 15px;
+}
+
+input {
+    font-size: 16px;
+}
+
+/*(57) This is how we target class with multiple elements*/
+.info label, .info input {
+    display: inline-block;
+}
+
+.info input {
+    width: 50%;
+    text-align: left;
+}
+
+.info label {
+    width: 10%;
+    min-width: 55px;
+    text-align: right;
+}
+
+.question-block {
+    text-align: left;
+    display: block;
+    width: 100%;
+    margin-top: 20px;
+    padding-top: 5px;   
+}
+
+p {
+    margin-top: 5px;
+    padding-left: 15px;
+    font-size: 20px; 
+}
+
+/*(34) Use this to add a text before the p elements on both questions*/
+p::before {
+    content: "Question #";
+}
+
+.question {
+    border: none;
+    padding-bottom: 0;
+}
+
+.answers-list {
+    /*(61) to modify bullets, we can use the following element*/
+    list-style: none;
+    padding: 0;
+}
+
+button {
+    display: block;
+    margin: 40px auto;
+    width: 40%;
+    padding: 15px;
+    font-size: 23px;
+    background: #d0d0d5;
+    border: 3px solid #3b3b4f;
+}
+
+footer {
+    display: flex;
+    background-color: #2a2a40;
+    justify-content: center;
+}
+
+footer, footer a {
+    color: #dfdfe2;
+}
+
+address {
+    text-align: center;
+    padding: 0.3em;
+}
+
+.sr-only {
+    /*(25) Use the definition below to hide the span element*/
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
