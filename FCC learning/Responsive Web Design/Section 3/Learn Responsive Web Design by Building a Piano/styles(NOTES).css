@@ -1,0 +1,87 @@
+/*(9) This rule is used to reset the html box model*/
+/*(10) If we add inherit to it, we can pass this to the other elements within the HTML element*/
+html {
+    box-sizing: border-box;
+}
+
+/*(10) The ::before selector creates a pseudo-element which is the first child of the selected element, while the ::after selector creates a pseudo-element which is the last child of the selected element.*/
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+
+#piano {
+    position: relative;
+    background-color: #00471b;
+    width: 992px;
+    height: 290px;
+    margin: 80px auto;
+    padding: 90px 20px 0 20px;
+    border-radius: 10px;
+}
+
+.keys {
+    background-color: #040404;
+    width: 949px;
+    height: 180px;
+    padding-left: 2px;
+    /*(31) the "overflow: hidden" property hides any element that is pushed outside the set width*/
+    overflow: hidden;
+}
+
+.key {
+    background-color: #ffffff;
+    position: relative;
+    width: 41px;
+    height: 175px;
+    margin: 2px;
+    /*(17) the "float element stacks all the key element to the left of each other inside the .keys element*/
+    float: left;
+    border-radius: 0 0 3px 3px;
+}
+
+.key.black--key::after {
+    position: absolute;
+    left: -18px;
+    width: 32px;
+    height: 100px;
+    background-color: #1D1E22;
+    /*(18) setting content to empty ensure that the pseudo elements ::after and ::before are empty.
+    If I want to play with it I can put a value to content and see what happens*/
+    content: "";
+    border-radius: 0 0 3px 3px;
+}
+
+.logo {
+    width: 200px;
+    position: absolute;
+    top: 23px;
+}
+
+/*(27) @media at-rule is to conditionally apply CSS when the viewport is of a certain size.*/
+@media (max-width:768px) {
+    
+    #piano {
+        width: 358px;
+    }
+
+    .keys {
+        width: 318px;
+    }
+
+    .logo {
+        width: 150px;
+    }
+}
+
+/*(32) the "and" logical operator allow @ quieries to have more than one condition*/
+@media (min-width:769px) and (max-width:1199px) {
+
+    #piano {
+        width: 675px;
+    }
+
+    .keys {
+        width: 633px;
+    }
+
+}
