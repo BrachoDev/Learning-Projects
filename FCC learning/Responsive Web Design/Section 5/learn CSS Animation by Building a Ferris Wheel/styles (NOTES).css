@@ -1,0 +1,126 @@
+.wheel {
+  border: 2px solid black;
+  border-radius: 50%;
+  margin-left: 50px;
+  position: absolute;
+  width: 55vw;
+  height: 55vw;
+  max-width: 500px;
+  max-height: 500px;
+  /*(20) This links the class to the @keyframes rule*/
+  animation-name: wheel;
+  /*(20) This tells how long the animation should last*/
+  animation-duration: 10s;
+  /*(21) This tells the animation how many time it should be done. It can be a number of infinite*/
+  animation-iteration-count: infinite;
+  /*(21) This tells the animation how it should progress over time. In this case we made it steady by setting it to linear*/
+  animation-timing-function: linear;
+}
+
+.line {
+  background-color: black;
+  width: 50%;
+  height: 2px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  /*(8) transfrom-origin is used to set the point around which a CSS transformation is applied*/
+  transform-origin: 0% 0%;
+}
+
+.line:nth-of-type(2) {
+  transform: rotate(60deg);
+}
+
+.line:nth-of-type(3) {
+  transform: rotate(120deg);
+}
+
+.line:nth-of-type(4) {
+  transform: rotate(180deg);
+}
+
+.line:nth-of-type(5) {
+  transform: rotate(240deg);
+}
+
+.line:nth-of-type(6) {
+  transform: rotate(300deg);
+}
+
+.cabin {
+  background-color: red;
+  width: 20%;
+  height: 20%;
+  position: absolute;
+  border: 2px solid;
+  transform-origin: 50% 0%;
+  animation-name: cabins;
+  animation-duration: 10s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.cabin:nth-of-type(1) {
+  right: -8.5%;
+  top: 50%;
+}
+
+.cabin:nth-of-type(2) {
+  right: 17%;
+  top: 93.5%;
+}
+
+.cabin:nth-of-type(3) {
+  right: 67%;
+  top: 93.5%;
+}
+
+.cabin:nth-of-type(4) {
+  left: -8.5%;
+  top: 50%;
+}
+
+.cabin:nth-of-type(5) {
+  left: 17%;
+  top: 7%;
+}
+
+.cabin:nth-of-type(6) {
+  right: 17%;
+  top: 7%;
+}
+
+/*(16) @keyframes is a rule to define the flow of a CSS animation*/
+@keyframes wheel {
+  /*(17) this is to define the start point*/
+  0% {
+    transform: rotate(0deg);
+  }
+  /*(20)This is to define the finish point*/
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cabins {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  25% {
+    background-color: yellow;
+  }
+
+  50% {
+    background-color: purple;
+  }
+
+  75% {
+    background-color: yellow;
+  }
+
+  100% {
+    transform: rotate(-360deg);
+  }
+}
