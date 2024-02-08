@@ -13,12 +13,12 @@ let fighting;
 let monsterHealth;
 /*(12) JavaScript has multiple different data types. This one is "string", which is used to store things like words or text
   (13)Another data type is "array". An array can be used to hold multiple values.
-  (In this case we want the player to start with a stick. That's why stick is by itself)*/
+  (In this case, we want the player to start with a stick. That's why the stick is by itself)*/
 let inventory = ["stick"];
 /*(19) JavaScript interacts with the HTML using the Document Object Model, or DOM. The DOM is a tree of objects that represents the HTML.
   We can access the HTML using the document object, which represents our entire HTML document.
   The querySelector() method takes a CSS selector as an argument and returns the first element that matches that selector.
-  (21) if we are not going to assigna new value to a variable, it is best practice to use the "const" keyword to declare it.
+  (21) If we are not going to assign a new value to a variable, it is best practice to use the "const" keyword to declare it.
   JavaScript will throw an error if we accidentally reassign it*/
 const button1 = document.querySelector("#button1");
 const button2 = document.querySelector("#button2");
