@@ -1,3 +1,5 @@
 # Learning-Projects
-Here, I post my FCC work. This is in order to help other people to learn. Notice that I have Organized this as it is currently in FCC, so the files are easier to find
-NOTE: PROJECTS ARE PUBLISHED IN A SEPARATE REPOSITORY!!!
+
+## Here, you can find my [Freecodecamp](https://www.freecodecamp.org/) work and other learning projects that I am not posting in my portfolio.
+
+PD: Freecodecamp projects are included in separate repositories.
