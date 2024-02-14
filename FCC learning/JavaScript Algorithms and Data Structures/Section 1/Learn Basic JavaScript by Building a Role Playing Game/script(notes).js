@@ -271,6 +271,3 @@ function restart() {
   xpText.innerText = xp;
   goTown();
 }
-
-
-hlh
