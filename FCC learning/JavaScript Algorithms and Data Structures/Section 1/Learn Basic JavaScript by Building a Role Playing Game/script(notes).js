@@ -107,6 +107,12 @@ const locations = [
     "button functions": [restart, restart, restart],
     text: "You die. &#x2620;",
   },
+  {
+    name: "win",
+    "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
+    "button functions": [restart, restart, restart],
+    text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
+  },
 ];
 
 //initialize buttons
@@ -133,7 +139,8 @@ function update(location) {
   button2.onclick = location["button functions"][1];
   button3.onclick = location["button functions"][2];
   /*(67) we can use dot notation to assign location too*/
-  text.innerText = location.text;
+  //(138) innerHTML allows to modify content inside an HTML element using JavaScript
+  text.innerHTML = location.text;
 }
 function goTown() {
   /*(60)Instead of assigning the innerText and onclick properties to specific strings and functions,
@@ -228,23 +235,47 @@ function attack() {
   text.innerText = "The " + monsters[fighting].name + " attacks.";
   text.innerText =
     "You attack it with your " + weapons[currentWeapon].name + ". ";
-  health -= monsters[fighting].level;
-  /*(121)The Math object in JavaScript contains static properties and methods for mathematical constants and functions.
+  health -= getMonsterAttackValue(monsters[fighting].level);
+  if (isMonsterHit()) {
+    /*(121)The Math object in JavaScript contains static properties and methods for mathematical constants and functions.
     One of those is Math.random(), which generates a random number from 0 (inclusive) to 1 (exclusive).
     Another is Math.floor(), which rounds a given number down to the nearest integer.
     Using these, you can generate a random number within a range.
     For example, this generates a random number between 1 and 5: Math.floor(Math.random() * 5) + 1;.*/
-  monsterHealth -=
-    weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+    monsterHealth -=
+      weapons[currentWeapon].power + Math.floor(Math.random() * xp) + 1;
+  } else {
+    text.innerText += " You miss.";
+  }
   healthText.innerText = health;
   monsterHealthText.innerText = monsterHealth;
   if (health <= 0) {
-    function lose() {}
+    lose();
   } /*(124) You can make an else statement conditional by using else if.*/ else if (
     monsterHealth <= 0
   ) {
-    defeatMonster();
+    /*(137) The strict equality operator will check if the values are equal and if they are the same data type.
+      It shows below as ===*/
+    if (fighting === 2) {
+      winGame();
+    } else {
+      defeatMonster();
+    }
   }
+}
+function getMonsterAttackValue(level) {
+  const hit = level * 5 - Math.floor(Math.random() * xp);
+  console.log(hit);
+  /*(145)Functions run specific blocks of code when they are called, but they can also return a value.
+    This value can be assigned to a variable and used elsewhere in your code.
+  return hit;*/
+  /*(146) The ternary operator is a conditional operator and can be used as a one-line if-else statement.
+    The syntax is: condition ? expressionIfTrue : expressionIfFalse.
+    This ensure that the hit doesn't take negative values*/
+  return hit > 0 ? hit : 0;
+}
+function isMonsterHit() {
+  return Math.random() > 0.2;
 }
 function dodge() {
   text.innerText =
@@ -259,6 +290,9 @@ function defeatMonster() {
 }
 function lose() {
   update(locations[5]);
+}
+function winGame() {
+  update(locations[6]);
 }
 function restart() {
   xp = 0;
