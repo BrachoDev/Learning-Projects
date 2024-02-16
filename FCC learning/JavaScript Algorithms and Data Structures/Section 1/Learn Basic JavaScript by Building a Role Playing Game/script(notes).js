@@ -98,7 +98,7 @@ const locations = [
       "Go to town square",
       "Go to town square",
     ],
-    "button functions": [goTown, goTown, goTown],
+    "button functions": [goTown, goTown, easterEgg],
     text: 'The monster screams "Arg!" as it dies. You gain experience points and find gold.',
   },
   {
@@ -112,6 +112,12 @@ const locations = [
     "button text": ["REPLAY?", "REPLAY?", "REPLAY?"],
     "button functions": [restart, restart, restart],
     text: "You defeat the dragon! YOU WIN THE GAME! &#x1F389;",
+  },
+  {
+    name: "easter egg",
+    "button text": ["2", "8", "Go to town square?"],
+    "button functions": [pickTwo, pickEight, goTown],
+    text: "You find a secret game. Pick a number above. Ten numbers will be randomly chosen between 0 and 10. If the number you choose matches one of the random numbers, you win!",
   },
 ];
 
@@ -262,6 +268,15 @@ function attack() {
       defeatMonster();
     }
   }
+  /*(155) We don't want a player's only weapon to break. The logical AND operator checks if two statements are true.
+    Use the logical AND operator && to add a second condition to your if statement.
+    The player's weapon should only break if inventory.length does not equal (!==) one.*/
+  if (Math.random() <= 0.1 && inventory.length !== 1) {
+    /*(153) The pop will remove the last item in an array and will  return that value.*/
+    text.innerText += " Your " + inventory.pop() + " breaks.";
+    /*(154) This will reduce the value of currentWeapon by 1*/
+    currentWeapon--;
+  }
 }
 function getMonsterAttackValue(level) {
   const hit = level * 5 - Math.floor(Math.random() * xp);
@@ -275,7 +290,10 @@ function getMonsterAttackValue(level) {
   return hit > 0 ? hit : 0;
 }
 function isMonsterHit() {
-  return Math.random() > 0.2;
+  /*(151) The logical OR operator will use the first value if it is truthy – that is,
+    anything apart from NaN, null, undefined, 0, -0, 0n, "", and false. 
+    Otherwise, it will use the second value.*/
+  return Math.random() > 0.2 || health < 20;
 }
 function dodge() {
   text.innerText =
@@ -304,4 +322,41 @@ function restart() {
   healthText.innerText = health;
   xpText.innerText = xp;
   goTown();
+}
+function easterEgg() {
+  update(locations[7]);
+}
+function pickTwo() {
+  pick(2);
+}
+function pickEight() {
+  pick(8);
+}
+function pick(guess) {
+  const numbers = [];
+  /*(161) A while loop accepts a condition, and will run the code in the block until the condition is no longer true.*/
+  while (numbers.length < 10) {
+    numbers.push(Math.floor(Math.random() * 11));
+  }
+  //(164) the escape character \n will cause the next part of the text appear on a new line.
+  text.innerText = "You picked " + guess + ". Here are the random numbers:\n";
+  //(165) A for loop runs for a specific number of times.
+  /*(166) for loops are declared with three expressions separated by semicolons. 
+    For (a; b; c), where a is the initialization expression, b is the condition, and c is the final expression. */
+  for (let i = 0; i < 10; i++) {
+    text.innerText += numbers[i] + "\n";
+  }
+  /*(170) The .includes() method determines if an array contains an element and will return either true or false.*/
+  if (numbers.includes(guess)) {
+    text.innerText += "Right! You win 20 gold!";
+    gold += 20;
+    goldText.innerText = gold;
+  } else {
+    text.innerText += "Wrong! You lose 10 health!";
+    health -= 10;
+    healthText.innerText = health;
+    if (health <= 0) {
+      lose();
+    }
+  }
 }
