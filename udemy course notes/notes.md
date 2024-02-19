@@ -8,7 +8,7 @@
 
 - This is how JS code look like:
 
-![alt text](image.png)
+  ![alt text](image.png)
 
 ## Data Types:
 
@@ -20,53 +20,53 @@ alert("hello"); // "hello" is the string data.
 
 - Strings Concatenation:
 
-```javascript
-var message = "Hello";
-var name = "Carlos";
+  ```javascript
+  var message = "Hello";
+  var name = "Carlos";
 
-//Write you code below this line:
+  //Write you code below this line:
 
-alert(message + " " + name + "!"); // Outputs in Console: Hello Carlos!
-```
+  alert(message + " " + name + "!"); // Outputs in Console: Hello Carlos!
+  ```
 
 - String feature `.length` challenge answer:
 
   (Create an alert that shows how many characters we typed and how many left after 280 characters.)
 
-```javascript
-var text = prompt("Enter your Text here");
-var numberOfText = text.length;
-var remaining = 280 - numberOfText;
+  ```javascript
+  var text = prompt("Enter your Text here");
+  var numberOfText = text.length;
+  var remaining = 280 - numberOfText;
 
-alert(
-  "You have written " +
-    numberOfText +
-    " characters, you have " +
-    remaining +
-    " left."
-);
-```
+  alert(
+    "You have written " +
+      numberOfText +
+      " characters, you have " +
+      remaining +
+      " left."
+  );
+  ```
 
 - Feature `.slice(x,y)` challenge answer:
 
   (Create an alert that shows a max of 140 characters)
 
-```javascript
-var text = prompt("Enter your text here");
-alert(text.slice(0, 140));
-```
+  ```javascript
+  var text = prompt("Enter your text here");
+  alert(text.slice(0, 140));
+  ```
 
 - Feature `.toUppercase()` and `.toLowerCase()` methods challenge answers:
 
   (Create an alert that shows the name of the person in the correct form Example: Carlos OR Bracho)
 
-```javascript
-var name = prompt("What is your name?");
-firstLetter = name.slice(0, 1).toUpperCase();
-remainingLetters = name.slice(1, name.length).toLowerCase();
+  ```javascript
+  var name = prompt("What is your name?");
+  firstLetter = name.slice(0, 1).toUpperCase();
+  remainingLetters = name.slice(1, name.length).toLowerCase();
 
-alert("Hello, " + firstLetter + remainingLetters + " !");
-```
+  alert("Hello, " + firstLetter + remainingLetters + " !");
+  ```
 
 ### 2. Numbers: It represents numerical values.
 
@@ -78,11 +78,11 @@ alert("Hello, " + firstLetter + remainingLetters + " !");
 
   (Create an alert that calculates the age of dogs in human years)
 
-```javascript
-var dogAge = prompt("Enter your dog's age");
-var humanAge = (dogAge - 2) * 4 + 21;
-alert("Your dog is " + humanAge + " in human years !");
-```
+  ```javascript
+  var dogAge = prompt("Enter your dog's age");
+  var humanAge = (dogAge - 2) * 4 + 21;
+  alert("Your dog is " + humanAge + " in human years !");
+  ```
 
 - We can increment or decrement values by 1 using `++` and `--`.
 
