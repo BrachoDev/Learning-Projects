@@ -1,13 +1,3 @@
-var a = "3";
-var b = "8";
+var text = prompt("Enter your text here");
+alert(text.slice(0, 140));
 
-
-/***********Do not change the code above 👆*******/
-//Write your code on lines 7 - 9:
-var c = a;
-a = b;
-b = c;
-/***********Do not change the code below 👇*******/
-
-console.log("a is " + a);
-console.log("b is " + b);
