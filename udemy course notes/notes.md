@@ -74,6 +74,38 @@ alert("Hello, " + firstLetter + remainingLetters + " !");
 1,2,3... // These are numbers data.
 ```
 
+- To put long formulas in JS, we need to use the same logic as calculators.
+
+  (Create an alert that calculates the age of dogs in human years)
+
+```javascript
+var dogAge = prompt("Enter your dog's age");
+var humanAge = (dogAge - 2) * 4 + 21;
+alert("Your dog is " + humanAge + " in human years !");
+```
+
+- We can increment or decrement values by 1 using `++` and `--`.
+
+  Example:
+
+  ```javascript
+  var x = 5;
+  x++; //x is now = 6
+  var y = 5;
+  y--; //y is now = 4
+  ```
+
+- If we want to increase or decrease by more than 1, we can use `+=` or `-=` operators.
+
+  Example:
+
+  ```javascript
+  var x = 5;
+  x += 2; //x is now = 7
+  var y = 5;
+  y -= 2; //y is now = 3
+  ```
+
 ### 3. Boolean: Data type that describe data to be either `True` or `False`
 
 ## Variables:
