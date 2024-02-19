@@ -6,7 +6,9 @@
 
 - JavaScript is an interpreter
 
-- This is how JS code look like:![alt text](image.png)
+- This is how JS code look like:
+
+![alt text](image.png)
 
 ## Data Types:
 
@@ -54,8 +56,17 @@ var text = prompt("Enter your text here");
 alert(text.slice(0, 140));
 ```
 
-- Feature `.toUppercase()` challenge answer:
-  ()
+- Feature `.toUppercase()` and `.toLowerCase()` methods challenge answers:
+
+  (Create an alert that shows the name of the person in the correct form Example: Carlos OR Bracho)
+
+```javascript
+var name = prompt("What is your name?");
+firstLetter = name.slice(0, 1).toUpperCase();
+remainingLetters = name.slice(1, name.length).toLowerCase();
+
+alert("Hello, " + firstLetter + remainingLetters + " !");
+```
 
 ### 2. Numbers: It represents numerical values.
 
