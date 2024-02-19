@@ -160,3 +160,85 @@ var myName = "Carlos";
 var my_name = "Carlos";
 var useScoreFinal = 12; // This is the best way because it includes camelCase.
 ```
+
+## Functions:
+
+![alt text](image-1.png)
+
+- `alert()` will show as a pop up on the website while `console.log()` will print out the message in the console, and it is usually used by the developer.
+
+- Within the the functions, we can add inputs:
+
+  ```javascript
+  function nameOfFunction(input) {}
+  ```
+
+  This is an example:
+  ![alt text](image-3.png)
+  As we can see bottles will be replaced by two, telling the program to get two bottles and calculating the `cost`
+
+  Using this information, create a code that calculates the amount of bottles that can be bought.
+
+  ```javascript
+  function getMilk(money) {
+    console.log("leaveHouse");
+    console.log("moveRight");
+    console.log("moveRight");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveUp");
+    console.log("moveRight");
+    console.log("moveRight");
+
+    var bottles = Math.floor(money / 1.5);
+
+    console.log("buy " + bottles + " bottles of milk");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveDown");
+    console.log("moveLeft");
+    console.log("moveLeft");
+    console.log("enterHouse");
+  }
+  getMilk(5);
+  ```
+
+- The `Math.floor()` method rounds a number _DOWN_ to the nearest integer
+
+#### Exercise: Calculate the remaining months, weeks and days if the max age is 90.
+
+```javascript
+function lifeInWeeks(age) {
+  /************Don't change the code above************/
+
+  var remainingYears = 90 - age;
+
+  var months = remainingYears * 12;
+  var weeks = remainingYears * 52;
+  var days = remainingYears * 365;
+
+  console.log(
+    "You have " +
+      days +
+      " days, " +
+      weeks +
+      " weeks, and " +
+      months +
+      " months left."
+  );
+
+  /*************Don't change the code below**********/
+}
+
+lifeInWeeks(25);
+```
+
+console View:
+
+```console
+You have 23725 days, 3380 weeks, and 780 months left.
+```
