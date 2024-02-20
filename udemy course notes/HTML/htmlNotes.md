@@ -53,4 +53,5 @@
 
 ### Image Elements:
 
-- It looks like this `<img src="url">` where `src=""` is an attribute that contains the URL of the image.
+- It looks like this `<img src="url" alt="description-of-image">` where `src=""` is an attribute that contains the URL of the image and `alt=""` is a description of the image, and it should always be added.
+- [Check this link to see exercise about how to use Image element.](3.3%20Image%20Elements/index.html)
