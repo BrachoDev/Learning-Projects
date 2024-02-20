@@ -4,6 +4,7 @@
 
 - [Headings Element](#headings-element)
 - [Paragraph Element](#paragraph-element)
+- [Void Elements](#void-elements)
 
 ### Headings Element:
 
@@ -13,7 +14,15 @@
   - Do not skip levels. Do not use `<h1>` and then use `<h2>`
 - More information about HTML and headers [here](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements)
 
-### Paragraph Element
+### Paragraph Element:
 
 - Paragraphs look like this: `<p>This is a paraghraph.</p>`
 - [Check this link to see exercise about how to use paragraphs.](2.2%20Paragraph%20Element/index.html)
+- Resource to create Lorem Ipsum text (Usually used by programmers) = [link](https://www.lipsum.com/)
+
+### Void Elements:
+
+- These are self closing tags. They don't have a separate closing tag. Example: `<br />` or `<hr />`
+- `<br />` creates a line break.
+- `<hr />` creates a horizontal rule that separates content.
+- [Check this link to see exercise about how to use void elements.](2.3%20Void%20Elements/index.html)
