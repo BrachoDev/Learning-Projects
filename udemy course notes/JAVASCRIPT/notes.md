@@ -1,8 +1,6 @@
-# Notes From Dr. Angela Yu's Course (The Complete 2024 Web Development Bootcamp)
+# JavaScript Notes From Dr. Angela Yu's Course (The Complete 2024 Web Development Bootcamp)
 
-## Section 14 | Introduction to Javascript ES6
-
-### Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
+## Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
 - JavaScript is an interpreter
 
