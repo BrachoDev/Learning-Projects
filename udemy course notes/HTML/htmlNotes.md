@@ -9,6 +9,7 @@
 - [Nesting and Indentation](#nesting-and-indentation)
 - [Anchor Elements](#anchor-elements)
 - [Image Elements](#image-elements)
+- [HTML Boilerplate](#html-boilerplate)
 
 ### Headings Element:
 
@@ -55,3 +56,26 @@
 
 - It looks like this `<img src="url" alt="description-of-image">` where `src=""` is an attribute that contains the URL of the image and `alt=""` is a description of the image, and it should always be added.
 - [Check this link to see exercise about how to use Image element.](3.3%20Image%20Elements/index.html)
+
+### HTML Boilerplate:
+
+- HTML boilerplate is usually when creating a new HTML file.
+- It looks like this
+
+  ```html
+  <!DOCTYPE html>
+  <!--- Defines document type --->
+  <html lang="en">
+    <!--Defines  language--->
+    <head>
+      <!-- Head contains meta information about the document --->
+      <meta charset="UTF-8" />
+      <meta name="viewport" />
+      <title>Document</title>
+    </head>
+
+    <body>
+      <h1>Hello World!</h1>
+    </body>
+  </html>
+  ```
