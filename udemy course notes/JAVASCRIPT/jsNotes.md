@@ -1,20 +1,32 @@
-# JavaScript Notes From Dr. Angela Yu's Course (The Complete 2024 Web Development Bootcamp)
+# JavaScript Notes
 
-## Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
+## Table of Contents
+
+- [Difference Between Interpreter and Compiler](#difference-between-interpreter-and-compiler-video)
+- [Data Types](#data-types)
+  1. [Strings](#1-strings)
+  2. [Numbers](#2-numbers)
+  3. [Boolean](#3-boolean)
+- [Variables](#variables)
+- [Functions](#functions)
+
+### Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
 - JavaScript is an interpreter
 
 - This is how JS code look like:
 
-  ![alt text](image.png)
+  ![JavaScript look](assets\images\JS-look.png)
 
-## Data Types:
+### Data Types:
 
-### 1. Strings: It contains text.
+#### 1. Strings:
 
-```javascript
-alert("hello"); // "hello" is the string data.
-```
+- It contains text. This is how it looks like:
+
+  ```javascript
+  alert("hello"); // "hello" is the string data.
+  ```
 
 - Strings Concatenation:
 
@@ -66,7 +78,9 @@ alert("hello"); // "hello" is the string data.
   alert("Hello, " + firstLetter + remainingLetters + " !");
   ```
 
-### 2. Numbers: It represents numerical values.
+#### 2. Numbers:
+
+- It represents numerical values.
 
 ```javascript
 1,2,3... // These are numbers data.
@@ -104,64 +118,66 @@ alert("hello"); // "hello" is the string data.
   y -= 2; //y is now = 3
   ```
 
-### 3. Boolean: Data type that describe data to be either `True` or `False`
+#### 3. Boolean:
 
-## Variables:
+- Data type that describe data to be either `True` or `False`
 
-![alt text](image-2.png)
+### Variables:
 
-Example of variable:
+![Variable image](assets\images\variables.png)
 
-```javascript
-var myName = "Carlos";
-var yourName = prompt("What is your name?");
-alert(
-  "My name is " +
-    myName +
-    ", welcome to this learning project " +
-    yourName +
-    " !"
-); //This code creates a message  box with a personalized greeting. Which shows how  we can use variables in alerts.
-```
+- Example of variable:
 
-### Javascript Variables Exercise:
+  ```javascript
+  var myName = "Carlos";
+  var yourName = prompt("What is your name?");
+  alert(
+    "My name is " +
+      myName +
+      ", welcome to this learning project " +
+      yourName +
+      " !"
+  ); //This code creates a message  box with a personalized greeting. Which shows how  we can use variables in alerts.
+  ```
 
-Change the variables so a = "8" and b = "3".
+- Javascript Variables Exercise:
 
-Do NOT change any of the existing code.
+  Change the variables so a = "8" and b = "3".
 
-You are NOT allowed to type any numbers.
+  Do NOT change any of the existing code.
 
-You should NOT redeclare the variables a and b.
+  You are NOT allowed to type any numbers.
 
-```javascript
-var a = "3";
-var b = "8";
+  You should NOT redeclare the variables a and b.
 
-/***********Do not change the code above 👆*******/
-//Write your code on lines 7 - 9:
-var c = a;
-a = b;
-b = c;
-/***********Do not change the code below 👇*******/
+  ```javascript
+  var a = "3";
+  var b = "8";
 
-console.log("a is " + a);
-console.log("b is " + b);
-//this changes the values so a = "8" and b = "3"
-```
+  /***********Do not change the code above 👆*******/
+  //Write your code on lines 7 - 9:
+  var c = a;
+  a = b;
+  b = c;
+  /***********Do not change the code below 👇*******/
 
-### Correct ways to name variables in JS:
+  console.log("a is " + a);
+  console.log("b is " + b);
+  //this changes the values so a = "8" and b = "3"
+  ```
 
-```javascript
-var my123 = 123;
-var myName = "Carlos";
-var my_name = "Carlos";
-var useScoreFinal = 12; // This is the best way because it includes camelCase.
-```
+- Correct ways to name variables in JS:
 
-## Functions:
+  ```javascript
+  var my123 = 123;
+  var myName = "Carlos";
+  var my_name = "Carlos";
+  var useScoreFinal = 12; // This is the best way because it includes camelCase.
+  ```
 
-![alt text](image-1.png)
+### Functions:
+
+![function look](assets\images\function-look.png)
 
 - `alert()` will show as a pop up on the website while `console.log()` will print out the message in the console, and it is usually used by the developer.
 
@@ -172,10 +188,11 @@ var useScoreFinal = 12; // This is the best way because it includes camelCase.
   ```
 
   This is an example:
-  ![alt text](image-3.png)
+  ![input example](assets\images\input-example.png)
+
   As we can see bottles will be replaced by two, telling the program to get two bottles and calculating the `cost`
 
-  Using this information, create a code that calculates the amount of bottles that can be bought.
+  - Exercise: Using this information, create a code that calculates the amount of bottles that can be bought.
 
   ```javascript
   function getMilk(money) {
@@ -207,36 +224,36 @@ var useScoreFinal = 12; // This is the best way because it includes camelCase.
 
 - The `Math.floor()` method rounds a number _DOWN_ to the nearest integer
 
-#### Exercise: Calculate the remaining months, weeks and days if the max age is 90.
+- Exercise: Calculate the remaining months, weeks and days if the max age is 90.
 
-```javascript
-function lifeInWeeks(age) {
-  /************Don't change the code above************/
+  ```javascript
+  function lifeInWeeks(age) {
+    /************Don't change the code above************/
 
-  var remainingYears = 90 - age;
+    var remainingYears = 90 - age;
 
-  var months = remainingYears * 12;
-  var weeks = remainingYears * 52;
-  var days = remainingYears * 365;
+    var months = remainingYears * 12;
+    var weeks = remainingYears * 52;
+    var days = remainingYears * 365;
 
-  console.log(
-    "You have " +
-      days +
-      " days, " +
-      weeks +
-      " weeks, and " +
-      months +
-      " months left."
-  );
+    console.log(
+      "You have " +
+        days +
+        " days, " +
+        weeks +
+        " weeks, and " +
+        months +
+        " months left."
+    );
 
-  /*************Don't change the code below**********/
-}
+    /*************Don't change the code below**********/
+  }
 
-lifeInWeeks(25);
-```
+  lifeInWeeks(25);
+  ```
 
-console View:
+  console View:
 
-```console
-You have 23725 days, 3380 weeks, and 780 months left.
-```
+  ```console
+  You have 23725 days, 3380 weeks, and 780 months left.
+  ```
