@@ -60,7 +60,7 @@
 ### HTML Boilerplate:
 
 - HTML boilerplate is usually when creating a new HTML file.
-- It looks like this
+- It looks like this:
 
   ```html
   <!DOCTYPE html>
@@ -70,11 +70,13 @@
     <head>
       <!-- Head contains meta information about the document --->
       <meta charset="UTF-8" />
-      <meta name="viewport" />
+      <!-- Meta charset ensures that all the characters are putting in correctly  in the web-->
       <title>Document</title>
+      <!--  Title tag gives a title to the webpage -->
     </head>
 
     <body>
+      <!--- Body contains everything that will be displayed on the page -->
       <h1>Hello World!</h1>
     </body>
   </html>
