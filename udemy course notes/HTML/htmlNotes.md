@@ -10,6 +10,7 @@
 - [Anchor Elements](#anchor-elements)
 - [Image Elements](#image-elements)
 - [HTML Boilerplate](#html-boilerplate)
+- [Footer Element](#footer-element)
 
 ### Headings Element:
 
@@ -80,4 +81,15 @@
       <h1>Hello World!</h1>
     </body>
   </html>
+  ```
+
+### Footer Element:
+
+- A `<footer>` typically contains information about the author of the section, copyright data or links to related documents.
+- this is an example of a footer:
+
+  ```html
+  <footer>
+    <p>© 2018 Gandalf</p>
+  </footer>
   ```
