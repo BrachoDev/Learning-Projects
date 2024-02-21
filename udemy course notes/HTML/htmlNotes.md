@@ -93,3 +93,5 @@
     <p>© 2018 Gandalf</p>
   </footer>
   ```
+
+- more information about `<footer>` can be found on [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/footer)
