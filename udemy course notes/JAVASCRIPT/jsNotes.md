@@ -124,7 +124,7 @@
 
 ### Variables:
 
-![Variable image](assets\images\variables.png)
+![Variable image](assets/images/variables.png)
 
 - Example of variable:
 
