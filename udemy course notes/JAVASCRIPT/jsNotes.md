@@ -181,6 +181,8 @@
 
 - `alert()` will show as a pop up on the website while `console.log()` will print out the message in the console, and it is usually used by the developer.
 
+- `prompt()` Will create a pop up in which we can enter values.
+
 - Within the the functions, we can add inputs:
 
   ```javascript
@@ -316,3 +318,13 @@
   ```
 
 - `Math.random()` generates a random 16 digit decimal number between 0 and 0.9999999999999999 (It never reaches 1). Example: 0.364738274631829
+
+  - Exercise using `Math.random()`: Create a Love Calculator in whic we enter two prompts for names and calculate a Random number that is a percentage.
+
+    ```javascript
+    var loveCalc = Math.round(Math.random() * 100 + 1); //It it important to add + 1 so it takes the value of 100 too.
+
+    prompt("Enter your name");
+    prompt("Enter the name of the person you love");
+    alert("You are " + loveCalc + "% compatible");
+    ```
