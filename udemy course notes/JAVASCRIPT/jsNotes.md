@@ -16,7 +16,7 @@
 
 - This is how JS code look like:
 
-  ![JavaScript look](assets\images\JS-look.png)
+  ![JavaScript look](assets/images/JS-look.png)
 
 ### Data Types:
 
