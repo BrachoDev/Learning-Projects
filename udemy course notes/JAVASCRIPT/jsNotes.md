@@ -222,7 +222,7 @@
   getMilk(5);
   ```
 
-- The `Math.floor()` method rounds a number _DOWN_ to the nearest integer
+- The `Math.floor()` method rounds a number _DOWN_ to the nearest integer; however, `Math.round()` is more Mathematically correct.
 
 - Exercise: Calculate the remaining months, weeks and days if the max age is 90.
 
@@ -257,3 +257,62 @@
   ```console
   You have 23725 days, 3380 weeks, and 780 months left.
   ```
+
+- the `return` value is used in function to end the execution of a function and give back a result.
+
+  - This is an example that shows the use of `return`.
+
+    ```javascript
+    function getMilk(money) {
+      console.log("leaveHouse");
+      console.log("moveRight");
+      console.log("moveRight");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveUp");
+      console.log("moveRight");
+      console.log("moveRight");
+
+      var bottles = Math.floor(money / 1.5);
+
+      console.log("buy " + bottles + " bottles of milk");
+      console.log("moveLeft");
+      console.log("moveLeft");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveDown");
+      console.log("moveLeft");
+      console.log("moveLeft");
+      console.log("enterHouse");
+
+      return money % 1.5; // Remainder of this division
+    }
+    var change = getMilk(4);
+    console.log(change); // This will show the remainder in the console
+    ```
+
+- Coding exercise: Create BMI calculator using functions.
+
+  ```javascript
+  //Create your function below this line.
+  //The first parameter should be the weight and the second should be the height.
+
+  function bmiCalculator(weight, height) {
+    var bmi = weight / (height * height);
+    return Math.round(bmi);
+  }
+
+  console.log(bmiCalculator(65, 1.8));
+
+  /* If my weight is 65Kg and my height is 1.8m, I should be able to call your function like this:
+  
+   var bmi = bmiCalculator(65, 1.8); 
+  
+   bmi should equal 20 when it's rounded to the nearest whole number.
+  
+   */
+  ```
+
+- `Math.random()` generates a random 16 digit decimal number between 0 and 0.9999999999999999 (It never reaches 1). Example: 0.364738274631829
