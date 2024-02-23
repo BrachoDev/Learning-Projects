@@ -177,7 +177,7 @@
 
 ### Functions:
 
-![function look](assets\images\function-look.png)
+![function look](assets/images/function-look.png)
 
 - `alert()` will show as a pop up on the website while `console.log()` will print out the message in the console, and it is usually used by the developer.
 
@@ -190,7 +190,7 @@
   ```
 
   This is an example:
-  ![input example](assets\images\input-example.png)
+  ![input example](assets/images/input-example.png)
 
   As we can see bottles will be replaced by two, telling the program to get two bottles and calculating the `cost`
 
