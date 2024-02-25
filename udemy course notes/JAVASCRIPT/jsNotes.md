@@ -365,3 +365,36 @@
   4. `>`: Is greater than
   5. `<=`: Is less or equal to.
   6. `>=`: Is great or equal to.
+
+  - If we want to combine operators we need to use the following:
+
+    1. `&&`: AND.
+    2. `||`: OR.
+    3. `!`: NOT.
+
+  - Example of combining operator using the Love Calculator:
+
+    ```javascript
+    var loveCalc = Math.round(Math.random() * 100 + 1);
+
+    prompt("Enter your name");
+    prompt("Enter the name of the person you love");
+
+    if (loveCalc > 70) {
+      alert(
+        "You are " +
+          loveCalc +
+          "% compatible. You love each other like Kanye loves Kanye."
+      );
+    }
+    if (loveCalc > 30 && loveCalc <= 70) {
+      alert("You are " + loveCalc + "% compatible.");
+    }
+    if (loveCalc <= 30) {
+      alert(
+        "You are " +
+          loveCalc +
+          "% compatible. You go together like oil and water."
+      );
+    }
+    ```
