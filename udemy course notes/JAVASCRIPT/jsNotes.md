@@ -7,6 +7,7 @@
   1. [Strings](#1-strings)
   2. [Numbers](#2-numbers)
   3. [Boolean](#3-boolean)
+  4. [Arrays](#4-arrays)
 - [Variables](#variables)
 - [Functions](#functions)
 - [If and Else](#if-and-else)
@@ -122,6 +123,34 @@
 #### 3. Boolean:
 
 - Data type that describe data to be either `True` or `False`
+
+#### 4. Arrays:
+
+- A collection of items separated by commas enclosed within square brackets `[ ]`, with each item called an element.
+- It could look like this:
+  ```javascript
+  var names = [Tom, Jerry, Spike];
+  ```
+  - To access elements of an array you need to specify the index number.
+    ```javascript
+    var myList = names[1]; // This returns Jerry
+    ```
+- We can count how many items are in an array by using `.length`.
+- We can also use `.includes(value)` method to see if an array has an specific `value`. If it does it will return `true`, and if it doesn't, it will return `false`.
+
+  - Example of using an array to create a list that detects if someone is in a party list:
+
+    ```javascript
+    var myList = ["Carlos", "Camille", "Vanessa", "Veronica"];
+
+    var name = prompt("What is your name");
+
+    if (myList.includes(name)) {
+      alert("Hello " + name + ", welcome to the Party");
+    } else {
+      alert("Sorry, you are not on our list.");
+    }
+    ```
 
 ### Variables:
 
