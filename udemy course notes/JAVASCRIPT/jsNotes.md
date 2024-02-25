@@ -9,6 +9,7 @@
   3. [Boolean](#3-boolean)
 - [Variables](#variables)
 - [Functions](#functions)
+- [If and Else](#if-and-else)
 
 ### Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
@@ -328,3 +329,39 @@
     prompt("Enter the name of the person you love");
     alert("You are " + loveCalc + "% compatible");
     ```
+
+### If and Else:
+
+- `if` and `else` keywords are used in functions to tell JavaScript what to do if a certain condition is met.
+
+  - This is an Example of how `if` and `else` look like:
+
+    ![If and Else Example](assets/images/if-and-else-example.png)
+
+  - As an example, We can use it in the Love Calculator above:
+
+    ```Javascript
+    var loveCalc = Math.round(Math.random() * 100 + 1);
+
+    prompt("Enter your name");
+    prompt("Enter the name of the person you love");
+
+    if (loveCalc > 70) {
+      alert(
+        "You are " +
+          loveCalc +
+          "% compatible. You love each other like Kanye loves Kanye."
+      );
+    } else {
+      alert("You are " + loveCalc + "% compatible.");
+    }
+    ```
+
+- List of comparators and equality used with `if`:
+
+  1. `===`: Is equal to.
+  2. `!==`: Is not equal to.
+  3. `<`: Is less than.
+  4. `>`: Is greater than
+  5. `<=`: Is less or equal to.
+  6. `>=`: Is great or equal to.
