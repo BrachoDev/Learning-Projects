@@ -152,6 +152,42 @@
     }
     ```
 
+- We can add Items to arrays using the `.push()` method. Keep in mind that the value we put inside the brackets will be added at the end of the array. We can also delete the last item from an array using the `.pop` method.
+
+  - Example of the `.push()` method using the FizzBuzz problem: Create a program that creates an array from 1 to 15. for each number divisible by 3 write "Fizz" and if it is divisible by 5, write "Buzz". If it is divisible by both, write "FizzBuzz".
+
+    Answer:
+
+    ```javascript
+    var output = [];
+    var count = 1;
+    function fizzBuzz() {
+      if (count % 3 === 0 && count % 5 === 0) {
+        output.push("FizzBuzz");
+      } else if (count % 3 === 0) {
+        output.push("Fizz");
+      } else if (count % 5 === 0) {
+        output.push("Buzz");
+      } else {
+        output.push(count);
+      }
+      count++;
+      console.log(output);
+    }
+    ```
+
+- Arrays exercise: write a function which will select a random name from a list of names.
+
+  ```Javascript
+  function whosPaying(names) {
+    var numberOfPeople = names.length;
+    var randomPersonPosition = Math.floor(Math.random() * numberOfPeople);
+    var randomPerson = names[randomPersonPosition];
+
+    return randomPerson + " is goint to buy lunch today!";
+  }
+  ```
+
 ### Variables:
 
 ![Variable image](assets/images/variables.png)
