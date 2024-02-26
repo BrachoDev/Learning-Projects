@@ -11,6 +11,8 @@
 - [Variables](#variables)
 - [Functions](#functions)
 - [If and Else](#if-and-else)
+- [Loops](#loops)
+  1. [While Loops](#1-while-loops)
 
 ### Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
@@ -488,4 +490,53 @@
   }
 
   console.log(isLeap(2400));
+  ```
+
+### Loops
+
+#### 1. While loops:
+
+- It will run until condition is not true.
+  ```javascript
+  while(something is true){
+    // Do something
+  }
+  ```
+- Example of while loops using the FizzBuzz problem:
+
+  ```javascript
+  var output = [];
+  var count = 1;
+  function fizzBuzz() {
+    while (count <= 15) {
+      if (count % 3 === 0 && count % 5 === 0) {
+        output.push("FizzBuzz");
+      } else if (count % 3 === 0) {
+        output.push("Fizz");
+      } else if (count % 5 === 0) {
+        output.push("Buzz");
+      } else {
+        output.push(count);
+      }
+      count++;
+      console.log(output);
+    }
+  }
+  ```
+
+- Coding challenge: Create a program that prints the lyrics of [The Song 99 Bottles of Beer](https://www.99-bottles-of-beer.net/lyrics.html)
+
+  ```javascript
+  var numberOfBottles = 99;
+  while (numberOfBottles >= 0) {
+    var bottleWord = "bottle";
+    if (numberOfBottles === 1) {
+      bottleWord = "bottles";
+    }
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall");
+    console.log(numberOfBottles + " " + bottleWord + " of beer,");
+    console.log("Take one down, pass it around,");
+    numberOfBottles--;
+    console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+  }
   ```
