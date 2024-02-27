@@ -14,6 +14,7 @@
 - [Loops](#loops)
   1. [While Loops](#1-while-loops)
   2. [For Loops](#2-for-loops)
+- [Adding JavaScript to Websites](#adding-javascript-to-websites)
 
 ### Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
@@ -579,3 +580,5 @@
     return output;
   }
   ```
+
+### Adding JavaScript to Websites
