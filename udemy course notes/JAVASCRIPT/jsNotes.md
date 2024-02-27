@@ -13,6 +13,7 @@
 - [If and Else](#if-and-else)
 - [Loops](#loops)
   1. [While Loops](#1-while-loops)
+  2. [For Loops](#2-for-loops)
 
 ### Difference between interpreter and Compiler [video](https://www.youtube.com/watch?v=_C5AHaS1mOA)
 
@@ -538,5 +539,43 @@
     console.log("Take one down, pass it around,");
     numberOfBottles--;
     console.log(numberOfBottles + " " + bottleWord + " of beer on the wall.");
+  }
+  ```
+
+#### 2. For Loops:
+
+- Works similarly to `while` loops, but we specify the amount of times we want the loop to run.
+- `while` loops check for a state and the `for` loops look for an iteration.
+
+  ```javascript
+  for (i = 0; i < 2; i++) {
+    //Do something
+  }
+  ```
+
+  `i = 0` is the starting point.
+
+  `i < 2` is the condition or ending point.
+
+  `i++` is the change in value after each iteration.
+
+- For loops make it a little bit easier to create loops.
+- Coding Challenge: Create a fibonacci function Generator [See this link tyo learn what fibonacci is](https://en.wikipedia.org/wiki/Fibonacci_sequence):
+
+  ```javascript
+  function fibonacciGenerator(n) {
+    var output = [];
+    if (n === 1) {
+      output = [0];
+    } else if (n === 2) {
+      output = [0, 1];
+    } else {
+      output = [0, 1];
+      for (var i = 2; i < n; i++) {
+        output.push(output[output.length - 2] + output[output.length - 1]);
+      }
+    }
+
+    return output;
   }
   ```
