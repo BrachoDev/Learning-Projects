@@ -8,6 +8,12 @@ This is information I've learned in school courses and online learning resources
 
 ## SNHU Notes:
 
+Table of content:
+
+- [Create a New Database](#create-a-new-database)
+- [Create a Table](#create-a-table)
+- [Alter a Table](#alter-a-table)
+
 ### Create a new database:
 
 - `CREATE DATABASE last_name_here;` Is used to create a database.
@@ -36,7 +42,7 @@ This is information I've learned in school courses and online learning resources
 
   ![DESCRIBE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/DESCRIBE.png)
 
-### Add a second field into the table and describe it:
+### Alter a table:
 
 - `ALTER TABLE` is used to `ADD`, `DELETE`, or `MODIFY` columns in an existing table.
 
