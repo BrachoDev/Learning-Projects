@@ -2,9 +2,11 @@
 
 This is information I've learned in school courses and online learning resources I have found.
 
-## MySQL Syntax:
+## MySQL resources:
 
 [MySQL syntax website](https://www.mysqltutorial.org/mysql-basics/)
+
+[SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql)
 
 ## SNHU Notes:
 
