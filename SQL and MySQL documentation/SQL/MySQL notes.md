@@ -15,6 +15,7 @@ Table of content:
 - [Create a New Database](#create-a-new-database)
 - [Create a Table](#create-a-table)
 - [Alter a Table](#alter-a-table)
+- [Insert Records to Table](#insert-records-to-table)
 
 ### Create a new database:
 
@@ -53,3 +54,17 @@ Table of content:
   If we `DESCRIBE` the table this is how it will look:
 
   ![ALTER TABLE DESCRIBED](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE%20DESCRIBE%20EXAMPLE.png)
+
+### Insert records to table:
+
+- `INSERT INTO Table_Name VALUES` Allows us to insert records in a table. Each line going from left to right is a record. Each line going from top to bottom is a column.
+
+  ![INSERT INTO table VALUES exmaple](/SQL%20and%20MySQL%20documentation/assets/INSERT%20INTO%20table%20VALUES.png)
+
+- `SELECT * FROM Table_Name`in MySQL is used to retrieve all data from the table and shows it.
+
+  ![SELECT FROM table EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table.png)
+
+  We can also `SELECT` especific columns by especifying them instead of using `*`:
+
+  ![SELECT FROM table EXAMPLE 2](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table%202.png)
