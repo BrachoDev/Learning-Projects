@@ -8,6 +8,8 @@ This is information I've learned in school courses and online learning resources
 
 [SQL Basics](https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql)
 
+[Connect SQL to VS code Video](https://www.youtube.com/watch?v=wzdCpJY6Y4c&authuser=0)
+
 ## SNHU Notes:
 
 Table of content:
