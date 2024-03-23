@@ -19,6 +19,7 @@ Table of content:
 - [Alter a Table](#alter-a-table)
 - [Insert Records to Table](#insert-records-to-table)
 - [Join Tables](#join-tables)
+- [Creating a CSV File](#creating-a-csv-file)
 
 ### Create a new database:
 
@@ -85,3 +86,22 @@ Table of content:
   ![INNER JOIN TABLE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20TABLE.png)
 
   This is a SELECT Statement that uses `INNER JOIN` to join Department and Employee tables. Also `ON` is the condition `INNER JOIN` follows. In this case, the Department_ID from these two table must be equal.
+
+  NOTES: Notice how we use `WHERE` to especify which department we want; however, we can also use `OR` to add another value.
+
+  ![INNER JOIN EXMAPLE WITH OR](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20WITH%20OR.png)
+
+### Creating a CSV File:
+
+- Using the `SELECT INTO OUTFILE`: This SQL statement allows you to retrieve data from a table and write it to a file on the MySQL server. You can specify the file format as CSV in the statement.
+
+  ![SELECT INTO OUTFILE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SELECT%20INTO%20OUTFILE.png)
+
+- STEPS to Creating a CSV File:
+
+  1. Exit MySQL using `quit` and press Enter.
+  2. Type `pwd` and press Enter.
+  3. Type `ls` and press Enter. This will show us a list of files
+  4. Type the name of the file we want to print and press Enter.
+
+  ![STEPS FOR PRINTING CSV FILE](/SQL%20and%20MySQL%20documentation/assets/PRINTING%20CSV%20FILE%20STEPS.png)
