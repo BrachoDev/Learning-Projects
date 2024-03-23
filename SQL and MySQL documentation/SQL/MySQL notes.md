@@ -18,6 +18,7 @@ Table of content:
 - [Create a Table](#create-a-table)
 - [Alter a Table](#alter-a-table)
 - [Insert Records to Table](#insert-records-to-table)
+- [Join Tables](#join-tables)
 
 ### Create a new database:
 
@@ -57,6 +58,10 @@ Table of content:
 
   ![ALTER TABLE DESCRIBED](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE%20DESCRIBE%20EXAMPLE.png)
 
+- `ALTER TABLE table_name RENAME` Allows us to modify the name of tables.
+
+  ![ALTER TABLE RENAME](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE%20RENAME.png)
+
 ### Insert records to table:
 
 - `INSERT INTO Table_Name VALUES` Allows us to insert records in a table. Each line going from left to right is a record. Each line going from top to bottom is a column.
@@ -70,3 +75,13 @@ Table of content:
   We can also `SELECT` especific columns by especifying them instead of using `*`:
 
   ![SELECT FROM table EXAMPLE 2](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table%202.png)
+
+### Join Tables:
+
+#### Inner Join
+
+- This is the most fundamental join type. It returns only rows where there's a match in both tables based on the join condition.
+
+  ![INNER JOIN TABLE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20TABLE.png)
+
+  This is a SELECT Statement that uses `INNER JOIN` to join Department and Employee tables. Also `ON` is the condition `INNER JOIN` follows. In this case, the Department_ID from these two table must be equal.
