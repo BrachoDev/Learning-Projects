@@ -18,6 +18,7 @@ Table of content:
 - [Create a Table](#create-a-table)
 - [Alter a Table](#alter-a-table)
 - [Insert Records to Table](#insert-records-to-table)
+- [Create a view](#create-a-view)
 - [Join Tables](#join-tables)
 - [Creating a CSV File](#creating-a-csv-file)
 
@@ -49,6 +50,14 @@ Table of content:
 
   ![DESCRIBE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/DESCRIBE.png)
 
+- `PRIMARY KEY` is used to define a primary key which acts as a unique identifier for each row. An exmaple of this is a Customer ID or Employee ID.
+
+  ![PRIMARY KEY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/PRIMARY%20KEY.png)
+
+- `FOREIGN KEY (ColumnName1) REFERENCES TableName(ColumnName2)` creates a `FOREIGN KEY` that establishes a link to another table's columns.
+
+  ![FOREIGN KEY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/FOREIGN%20KEY.png)
+
 ### Alter a table:
 
 - `ALTER TABLE` is used to `ADD`, `DELETE`, or `MODIFY` columns in an existing table.
@@ -76,6 +85,14 @@ Table of content:
   We can also `SELECT` especific columns by especifying them instead of using `*`:
 
   ![SELECT FROM table EXAMPLE 2](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table%202.png)
+
+### Create a View:
+
+- A `VIEW` contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database. This helps use pull data from multiple tables and make them easier to read.
+
+  ![CREATE VIEW EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/CREATE%20VIEW.png)
+
+  NOTE: Notice that `VIEW` essentially creates a new table. In this example it is called Collaborator.
 
 ### Join Tables:
 
