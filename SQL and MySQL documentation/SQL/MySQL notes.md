@@ -21,6 +21,7 @@ Table of content:
 - [Create a view](#create-a-view)
 - [Join Tables](#join-tables)
 - [Creating a CSV File](#creating-a-csv-file)
+- [Delete records](#delete-records)
 
 ### Create a new database:
 
@@ -108,6 +109,10 @@ Table of content:
 
   ![INNER JOIN EXMAPLE WITH OR](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20WITH%20OR.png)
 
+- Another way to select specific values is using `IN` in the `WHERE` clause.
+
+  ![INNER JOIN EXAMPLE WITH IN](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20WITH%20IN.png)
+
 ### Creating a CSV File:
 
 - Using the `SELECT INTO OUTFILE`: This SQL statement allows you to retrieve data from a table and write it to a file on the MySQL server. You can specify the file format as CSV in the statement.
@@ -122,3 +127,9 @@ Table of content:
   4. Type the name of the file we want to print and press Enter.
 
   ![STEPS FOR PRINTING CSV FILE](/SQL%20and%20MySQL%20documentation/assets/PRINTING%20CSV%20FILE%20STEPS.png)
+
+### Delete Records:
+
+- `DELETE FROM` statement removes rows from a specified table based on some condition(s).
+
+  ![DELETE FROM EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/DELETE%20FROM.png)
