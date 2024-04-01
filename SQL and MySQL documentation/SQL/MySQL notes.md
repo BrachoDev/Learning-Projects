@@ -18,10 +18,12 @@ Table of content:
 - [Create a Table](#create-a-table)
 - [Alter a Table](#alter-a-table)
 - [Insert Records to Table](#insert-records-to-table)
+- [Select Data from Tables](#select-data-from-a-table)
 - [Create a view](#create-a-view)
 - [Join Tables](#join-tables)
 - [Creating a CSV File](#creating-a-csv-file)
 - [Delete records](#delete-records)
+- [Import data from CSV file](#import-data-from-csv-file)
 
 ### Create a new database:
 
@@ -73,11 +75,17 @@ Table of content:
 
   ![ALTER TABLE RENAME](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE%20RENAME.png)
 
+- To change the values of specific rows, you can use the `UPDATE` statement. We also have to specify the column and row that needs to be updated by using `SET` and `WHERE`
+
+  ![UPDATE SET WHERE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/UPDATE%20SET%20WHERE.png)
+
 ### Insert records to table:
 
 - `INSERT INTO Table_Name VALUES` Allows us to insert records in a table. Each line going from left to right is a record. Each line going from top to bottom is a column.
 
   ![INSERT INTO table VALUES exmaple](/SQL%20and%20MySQL%20documentation/assets/INSERT%20INTO%20table%20VALUES.png)
+
+### Select data from a table:
 
 - `SELECT * FROM Table_Name`in MySQL is used to retrieve all data from the table and shows it.
 
@@ -86,6 +94,8 @@ Table of content:
   We can also `SELECT` especific columns by especifying them instead of using `*`:
 
   ![SELECT FROM table EXAMPLE 2](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table%202.png)
+
+- To retrieve record count from a table (number of rows) use `COUNT` function, like so:
 
 ### Create a View:
 
@@ -133,3 +143,12 @@ Table of content:
 - `DELETE FROM` statement removes rows from a specified table based on some condition(s).
 
   ![DELETE FROM EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/DELETE%20FROM.png)
+
+### Import Data From CSV file:
+
+- Use `LOAD DATA INFILE` This is the core instruction that tells MySQL you want to load data from a file.
+- Then use `INTO TABLE table_name` This tells MySQL where you want to import the data.
+- USE `FIELDS TERMINATED BY ','` This specifies what character separates fields within each record, in this case it's a comma.
+- `LINES TERMINATED BY '\r\n'` This option defines how different rows are separated in the CSV file.
+
+  ![IMPORT CSV FILES EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/IMPORT%20CSV%20FILE.png)
