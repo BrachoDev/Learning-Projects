@@ -16,9 +16,11 @@ Table of content:
 
 - [Create a New Database](#create-a-new-database)
 - [Create a Table](#create-a-table)
+  - [DATA TYPES](#data-types)
 - [Alter a Table](#alter-a-table)
 - [Insert Records to Table](#insert-records-to-table)
 - [Select Data from Tables](#select-data-from-a-table)
+  - [Group by and Order by](#group-by-and-order-by)
 - [Create a view](#create-a-view)
 - [Join Tables](#join-tables)
 - [Creating a CSV File](#creating-a-csv-file)
@@ -61,6 +63,12 @@ Table of content:
 
   ![FOREIGN KEY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/FOREIGN%20KEY.png)
 
+  #### DATA TYPES:
+
+  - When creating a TABLE we can specify what type of data each column will hold using Data Types. The table below is all the available Data types:
+
+    ![DATA TYPES TABLE](/SQL%20and%20MySQL%20documentation/assets/DATA%20TYPE%20TABLE.png)
+
 ### Alter a table:
 
 - `ALTER TABLE` is used to `ADD`, `DELETE`, or `MODIFY` columns in an existing table.
@@ -96,6 +104,13 @@ Table of content:
   ![SELECT FROM table EXAMPLE 2](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table%202.png)
 
 - To retrieve record count from a table (number of rows) use `COUNT` function, like so:
+
+#### Group by and Order by:
+
+- The `GROUP BY` clause is used to organize data into groups based on shared values in one or more columns.
+- The `ORDER BY` clause is used to sort the results retrieved by a SELECT statement. It arranges the data in a specific order, making it easier to analyze and interpret.
+
+  ![GROUP BY AND ORDER BY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/GROUP%20BY%20AND%20ORDER%20BY.png)
 
 ### Create a View:
 
