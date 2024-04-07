@@ -1,43 +1,39 @@
-CREATE TABLE PartsMaintenance(
-VehicleID VARCHAR(20) NOT NULL,
-State VARCHAR(25),
-Repair VARCHAR(50),
-Reason VARCHAR(50),
-YEAR SMALLINT,
-Make VARCHAR(50),
-BodyType VARCHAR(50)
-);
+SELECT State, COUNT(*) AS Amount
+FROM Customers
+GROUP BY  State
+ORDER BY Amount DESC
+LIMIT 10;
 
-ALTER TABLE  PartsMaintenance
-MODIFY COLUMN VehicleID VARCHAR(50); 
+SELECT SKU, Description, COUNT(*) AS AmountOrdered
+FROM Orders GROUP BY SKU, Description
+ORDER  BY AmountOrdered DESC
+LIMIT 3;
 
-DROP TABLE PartsMaintenance;
+SELECT SKU, Description, COUNT(*)
+FROM Orders INNER JOIN Customers  ON Orders.CustomerID = Customers.CustomerID
+WHERE  Customers.State IN ('Virginia', 'North Carolina', 'South Carolina', 'Georgia')
+GROUP  BY SKU, Description
+ORDER BY COUNT(*) DESC
+LIMIT 5;
 
-LOAD DATA INFILE '/home/codio/workspace/FleetMaintenanceRecords.csv' 
-INTO TABLE PartsMaintenance 
-FIELDS TERMINATED BY ',' 
-LINES TERMINATED BY '\n'
-IGNORE 1 ROWS;
+SELECT SKU, Description, COUNT(*)
+FROM Orders INNER JOIN RMA 
 
-SELECT Repair, COUNT(*) AS TimesRepaired
-FROM PartsMaintenance GROUP BY Repair
-ORDER  BY TimesRepaired;
+SELECT SKU, Description, COUNT(*)
+FROM Orders INNER JOIN RMA
+ON Orders.OrderID = RMA.OrderID
+WHERE RMA.Status = 'Complete'
+GROUP BY SKU, Description
+ORDER BY  COUNT(*) DESC LIMIT 5;
 
-| Repair                   | TimesRepaired |
-+--------------------------+---------------+
-| Dent Repair Rear         |            25 |
-| Transmission             |            28 |
-| Dent Repair  Left Fender |            37 |
-| Shocks                   |            47 |
-| Cab corner panel         |            49 |
-| Struts                   |            51 |
-| Brake line replacement   |            52 |
-| Rocker Panel             |            53 |
-| Fender replacement       |            54 |
-| Wheel Arch               |            55 |
-| Battery replacement      |            56 |
-| Windshield replacement   |            63 |
-| Tire replacement         |            66 |
-| Tire repair              |            74 |
-| Fule tank                |            95 |
-+--------------------------+-------
+SELECT SKU, Description, COUNT(*)
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID = Customers.CustomerID
+INNER JOIN RMA
+ON Orders.OrderID = RMA.OrderID
+WHERE RMA.Status = 'Complete'
+AND Customers.State IN ('Washington', 'Oregon', 'Idaho', 'Montana')
+GROUP BY SKU, Description
+ORDER BY COUNT(*) DESC
+LIMIT 5;

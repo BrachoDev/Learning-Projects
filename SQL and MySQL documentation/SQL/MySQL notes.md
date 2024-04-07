@@ -21,8 +21,10 @@ Table of content:
 - [Insert Records to Table](#insert-records-to-table)
 - [Select Data from Tables](#select-data-from-a-table)
   - [Group by and Order by](#group-by-and-order-by)
+  - [Operators](#operators)
 - [Create a view](#create-a-view)
 - [Join Tables](#join-tables)
+  - [Inner Join](#inner-join)
 - [Creating a CSV File](#creating-a-csv-file)
 - [Delete records](#delete-records)
 - [Import data from CSV file](#import-data-from-csv-file)
@@ -111,6 +113,36 @@ Table of content:
 - The `ORDER BY` clause is used to sort the results retrieved by a SELECT statement. It arranges the data in a specific order, making it easier to analyze and interpret.
 
   ![GROUP BY AND ORDER BY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/GROUP%20BY%20AND%20ORDER%20BY.png)
+
+#### Operators:
+
+- The `IN` operator is used in a WHERE clause to determine if a value matches one of several values.
+
+  ```mysql
+  SELECT * FROM CountryLanguages
+  WHERE Language IN ('Spanish', 'French', 'German');
+  ```
+
+- The `BETWEEN` operator provides an alternative way to determine if a value is between two other values.
+
+  ```MYSQL
+  SELECT Name
+  FROM  Employee
+  WHERE HireDate BETWEEN '2000-01-01' AND '2000-01-01';
+  ```
+
+- • The `LIKE` operator, when used in a `WHERE` clause, matches text against a pattern using the two wildcard characters % and \_.
+
+  1. % matches any number of characters. Ex: LIKE 'L%t' matches "Lt", "Lot", "Lift", and "Lol cat".
+  2. \_ matches exactly one character. Ex: LIKE 'L_t' matches "Lot" and "Lit" but not "Lt" and "Loot".
+
+  ```mysql
+  SELECT Repair, Reason, COUNT(*)
+  FROM PartsMaintenance
+  WHERE Reason LIKE '%corrosion%' OR  Reason LIKE '%rust%'
+  GROUP BY Reason, Repair
+  ORDER BY COUNT(*) DESC;
+  ```
 
 ### Create a View:
 
