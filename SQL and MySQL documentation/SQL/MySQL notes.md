@@ -31,7 +31,7 @@ Table of content:
 
 ### Create a new database:
 
-- `CREATE DATABASE last_name_here;` Is used to create a database.
+- `CREATE DATABASE database_name;` Is used to create a database.
 
   ![CREATE DATABASE Example](/SQL%20and%20MySQL%20documentation/assets/CREATE%20DATABASE.png)
 
