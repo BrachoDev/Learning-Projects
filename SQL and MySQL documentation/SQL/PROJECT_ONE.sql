@@ -78,3 +78,12 @@ WHERE OrderID = 5175;
 
 DELETE FROM RMA
 WHERE Reason = 'Rejected';
+
+CREATE VIEW Collaborator AS
+SELECT CustomerID AS CollaboratorID, FirstName, LastName, Street, City, State, ZipCode, Telephone
+FROM Customers;
+
+SELECT * FROM Orders
+INTO OUTFILE '/home/codio/workspace/OrdersList.csv'
+FIELDS TERMINATED BY ','
+LINES TERMINATED BY '\r\n';
