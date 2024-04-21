@@ -22,6 +22,7 @@ Table of content:
 - [Select Data from Tables](#select-data-from-a-table)
   - [Group by and Order by](#group-by-and-order-by)
   - [Operators](#operators)
+  - [Select with Math](#select-with-math)
 - [Create a view](#create-a-view)
 - [Join Tables](#join-tables)
   - [Inner Join](#inner-join)
@@ -143,6 +144,12 @@ Table of content:
   GROUP BY Reason, Repair
   ORDER BY COUNT(*) DESC;
   ```
+
+#### Select with Math:
+
+- We can use math to make calculations and create view and/or tables with calculated fields.
+  - In this example we are getting the percentage that SKU items represent in the database:
+    ![SELECT PERCENTAGE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SELECT%20PERCENTAGE.png)
 
 ### Create a View:
 
