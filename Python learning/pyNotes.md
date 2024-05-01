@@ -10,6 +10,8 @@
 
 - [Comments](#comments)
 - [Print in Terminal](#print-in-terminal)
+- [Input Function](#input-function)
+  - [Calculate number of letter in a String](#calculate-number-of-letter-in-a-string)
 - [Indentation](#indentation)
 - [Arithmetic Operations](#arithmetic-operations)
 - [Variable](#variables)
@@ -78,6 +80,25 @@ Comments are written using `#` in Python.
   #Hola!
   #Como estas?
   ```
+
+## Input function
+
+This is a function similar to `print()`. However, it allows an user to input data.
+
+```python
+name = input("what is your name?")
+print("Nice to meet you " +name)
+# this will show a message asking for name. then, it will show a message with the input assigned
+```
+
+### Calculate number of letter in a String
+
+To calculate the number of letter in a string we can use the `len()` function.
+
+```python
+print(len("brachodev"))
+#output: 9
+```
 
 ## Indentation
 
@@ -151,7 +172,7 @@ if x == 1
     name_Manuel = false
     ```
 
-  ### Assing multiple variables:
+  ### Assing multiple variables
 
   We can assign multiple variables in one line of code this way:
 
