@@ -179,7 +179,7 @@ print(attractive)
 
 ## Data Types
 
-A variable can have `string`, `number`, `float` or `boolean`
+A variable can have `string`, `integer`, `float` or `boolean`
 
 ### String
 
