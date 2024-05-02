@@ -10,6 +10,7 @@
 
 - [Comments](#comments)
 - [Print in Terminal](#print-in-terminal)
+  - [F-Strings](#f-strings)
 - [Input Function](#input-function)
   - [Calculate number of letter in a String](#calculate-number-of-letter-in-a-string)
 - [Indentation](#indentation)
@@ -86,6 +87,18 @@ Comments are written using `#` in Python.
   #Hola!
   #Como estas?
   ```
+
+### F-Strings
+
+In order to avoid using variable converters to print different variable types in one print, we can use an f-string like so:
+
+```python
+score = 0
+height = 1.75
+is_winning = True
+print(f"Your score is {score} and your height is {height}. Are you winning ? {is_winning}")
+#output: Your score is 0 and your height is 1.75. Are you winning ? True
+```
 
 ## Input function
 
