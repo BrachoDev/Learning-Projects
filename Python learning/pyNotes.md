@@ -15,6 +15,7 @@
 - [Indentation](#indentation)
 - [Arithmetic Operations](#arithmetic-operations)
 - [Variable](#variables)
+  - [Naming Variables](#naming-variables)
   - [Check Variable's Data Type](#check-variables-data-type)
   - [Data Types](#data-types-for-variables)
   - [Assign Multiple Variables](#assing-multiple-variables)
@@ -134,56 +135,68 @@ if x == 1
   # output: Hello Carlos
   ```
 
-  ### Check Variable's Data Type
+### Naming Variables
 
-  To check the data type of a variable we can use the `type` function
+- When naming variables we can add multiple word by separating them with `_` Example: `This_Example`
 
-  ```python
-  name = "Carlos"
-  print(type(name))
-  # output: <class 'str'>
-  ```
+- We can also put number; however, we can only put them at the end of the name, not the beginning.
 
-  ### Data Types for Variables
+```python
+variable1 = 1
+```
 
-  A variable can have `string`, `number`, `float` or `boolean`
+- We cannot have spaces in between word to name variable like `bad example`. This will create a syntax error.
 
-  - A `string` is text and uses `"quotation"`
+### Check Variable's Data Type
 
-    ```python
-    last_name = "Bracho"
-    ```
+To check the data type of a variable we can use the `type` function
 
-  - A `number` is just a value like `1, 2, 3.....n`. It is also known as integer
+```python
+name = "Carlos"
+print(type(name))
+# output: <class 'str'>
+```
 
-    ```python
-    Age = 25
-    ```
+### Data Types for Variables
 
-  - A `float` is a floating point number (a decimal number)
+A variable can have `string`, `number`, `float` or `boolean`
 
-    ```python
-    My_gpa = 3.94
-    ```
-
-  - A `boolean` value is `true` or `false`
-
-    ```python
-    name_Manuel = false
-    ```
-
-  ### Assing multiple variables
-
-  We can assign multiple variables in one line of code this way:
+- A `string` is text and uses `"quotation"`
 
   ```python
-  name, age, attractive = "Carlos", 25, True
-  print(name)
-  print(age)
-  print(attractive)
-
-  # Output:
-  # Carlos
-  # 25
-  # True
+  last_name = "Bracho"
   ```
+
+- A `number` is just a value like `1, 2, 3.....n`. It is also known as integer
+
+  ```python
+  Age = 25
+  ```
+
+- A `float` is a floating point number (a decimal number)
+
+  ```python
+  My_gpa = 3.94
+  ```
+
+- A `boolean` value is `true` or `false`
+
+  ```python
+  name_Manuel = false
+  ```
+
+### Assing multiple variables
+
+We can assign multiple variables in one line of code this way:
+
+```python
+name, age, attractive = "Carlos", 25, True
+print(name)
+print(age)
+print(attractive)
+
+# Output:
+# Carlos
+# 25
+# True
+```
