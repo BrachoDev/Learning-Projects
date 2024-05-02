@@ -17,8 +17,12 @@
 - [Variable](#variables)
   - [Naming Variables](#naming-variables)
   - [Check Variable's Data Type](#check-variables-data-type)
-  - [Data Types](#data-types-for-variables)
   - [Assign Multiple Variables](#assing-multiple-variables)
+- [Data Types](#data-types)
+  - [String](#string)
+  - [Integer](#integer)
+  - [Float](#float)
+  - [Boolean](#boolean)
 
 ## Comments
 
@@ -157,34 +161,6 @@ print(type(name))
 # output: <class 'str'>
 ```
 
-### Data Types for Variables
-
-A variable can have `string`, `number`, `float` or `boolean`
-
-- A `string` is text and uses `"quotation"`
-
-  ```python
-  last_name = "Bracho"
-  ```
-
-- A `number` is just a value like `1, 2, 3.....n`. It is also known as integer
-
-  ```python
-  Age = 25
-  ```
-
-- A `float` is a floating point number (a decimal number)
-
-  ```python
-  My_gpa = 3.94
-  ```
-
-- A `boolean` value is `true` or `false`
-
-  ```python
-  name_Manuel = false
-  ```
-
 ### Assing multiple variables
 
 We can assign multiple variables in one line of code this way:
@@ -200,3 +176,56 @@ print(attractive)
 # 25
 # True
 ```
+
+## Data Types
+
+A variable can have `string`, `number`, `float` or `boolean`
+
+### String
+
+- A `string` is text and uses `"quotation"`
+
+  ```python
+  last_name = "Bracho"
+  ```
+
+- We can select a specific letter from the string by performing a `substric` by using `[]`
+
+  ```python
+  print("Hello"[0])
+  #output: H
+  ```
+
+  Note: the first position is always `[0]`.
+
+### Integer
+
+- A `integer` is just a value like `1, 2, 3.....n`.
+
+  ```python
+  Age = 25
+  ```
+
+- We can also visualize large number better if we put `_` in between number
+
+  ```python
+  number = 123456789
+  number1 = 123_456_789
+  # number = number1 (both variables have the same number)
+  ```
+
+### Float
+
+- A `float` is a floating point number (a decimal number)
+
+  ```python
+  pi = 3.14159
+  ```
+
+### Boolean
+
+- A `boolean` value is `True` or `False`
+
+  ```python
+  name_manuel = False
+  ```
