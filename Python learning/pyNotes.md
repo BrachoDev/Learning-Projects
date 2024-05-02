@@ -19,10 +19,11 @@
   - [Check Variable's Data Type](#check-variables-data-type)
   - [Assign Multiple Variables](#assing-multiple-variables)
 - [Data Types](#data-types)
-  - [String](#string)
-  - [Integer](#integer)
-  - [Float](#float)
-  - [Boolean](#boolean)
+  1. [String](#string)
+  2. [Integer](#integer)
+  3. [Float](#float)
+  4. [Boolean](#boolean)
+  - [Data Type Conversion](#data-type-conversion)
 
 ## Comments
 
@@ -121,9 +122,47 @@ if x == 1
 ## Arithmetic Operations
 
 - `+` for addition
+
+  - We can use `+=` to sum a number to a variable
+
+    ```python
+    score = 0
+    # User scores a point
+    score += 1
+    #output: score is now 1
+    ```
+
 - `-` for substraction
+
+  - We can use `-=` to substract a number to a variable
+
+    ```python
+    score = 1
+    # User loses a point
+    score -= 1
+    #output: score is now 0
+    ```
+
 - `*` for multiplication
+
+  - We can also use `*=` to multiply a variable by a number
+
+    ```python
+    number = 2 + 2
+    number *= 2
+    #output: number = 8
+    ```
+
 - `/` for division
+
+  - we can also use `/=` to divide a variable by an specific number
+
+    ```python
+    result = 4/2
+    result /= 2
+    #output is 1
+    ```
+
 - `%` for modulus (returns the remainder)
 - `**` for exponentiation
 
@@ -222,6 +261,27 @@ A variable can have `string`, `integer`, `float` or `boolean`
   pi = 3.14159
   ```
 
+- If we want to round up our `float` numbers, we can use the `round()` function.
+
+  ```python
+  round(8/3)
+  #output: 3 instead of 2.6666666666666665
+  ```
+
+- We can also specify the number of decimals we want in our result when rounding numbers by adding a `,n`.
+
+  ```python
+  round(8/3,2)
+  #output: 2.67 only using two decimals
+  ```
+
+- If we only want the number before the decimals, we can use `//` instead. This also transform the `float` number into an `integer`
+
+  ```python
+  8 // 3
+  #output: 2 eliminating decimal spaces
+  ```
+
 ### Boolean
 
 - A `boolean` value is `True` or `False`
@@ -229,3 +289,11 @@ A variable can have `string`, `integer`, `float` or `boolean`
   ```python
   name_manuel = False
   ```
+
+### Data Type Conversion:
+
+We can modify the type of data for each variable using different functions for each data type.
+
+- To change a variable's data type to a `string`, we use `str(insert_variable)`
+- To change a variable's data type to an `int`, we use `int(variable)`
+- To change a variable's data type to a `float`, we use `float()`
