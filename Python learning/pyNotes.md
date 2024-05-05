@@ -25,6 +25,9 @@
   3. [Float](#float)
   4. [Boolean](#boolean)
   - [Data Type Conversion](#data-type-conversion)
+- [Control flow and logical operators](#control-flow-and-logical-operators)
+  - [Comparison Operators](#comparison-operators)
+  - [if / else](#if--else)
 
 ## Comments
 
@@ -310,3 +313,34 @@ We can modify the type of data for each variable using different functions for e
 - To change a variable's data type to a `string`, we use `str(insert_variable)`
 - To change a variable's data type to an `int`, we use `int(variable)`
 - To change a variable's data type to a `float`, we use `float()`
+
+## Control flow and logical Operators
+
+### Comparison Operators:
+
+This is a list of all the available operators used in logical operators:
+
+- `>` Greater than
+- `<` Less than
+- `>=` Greater than or equal to
+- `<=` Less than ot equal to
+- `==` Equal to
+- `!=` Not equal to
+
+### if / else
+
+To create conditions that tells what to do when certain situations are present, we use `if` and `else`
+
+Example:
+
+```python
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+```
+
+- NOTE: it is important to put the indentation after each condition. This is similar to adding `{}` ot `[]` in Javascript's conditions.
