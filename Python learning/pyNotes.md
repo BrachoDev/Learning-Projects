@@ -25,6 +25,7 @@
   3. [Float](#float)
   4. [Boolean](#boolean)
   - [Data Type Conversion](#data-type-conversion)
+- [Data Structures](#data-structures)
 - [Control flow and logical operators](#control-flow-and-logical-operators)
   - [Comparison Operators](#comparison-operators)
   - [if / else](#if--else)
@@ -336,6 +337,34 @@ We can modify the type of data for each variable using different functions for e
 - To change a variable's data type to a `string`, we use `str(insert_variable)`
 - To change a variable's data type to an `int`, we use `int(variable)`
 - To change a variable's data type to a `float`, we use `float()`
+
+## Data Structures:
+
+There are 4 basic python data structures:
+
+- `set` An unordered collection of items.
+
+  ```python
+  {1, 2, 3}, { 'First name', 'Last name' }
+  ```
+
+- `list` An ordered collection of changeable items. Two-dimensional arrays can be formed from lists of lists.
+
+  ```python
+  [1, 2, 3], ['Height', 6.1], [ [1, 2], [3, 4] ]
+  ```
+
+- `tuple` An ordered collection of unchangeable items.
+
+  ```python
+  (1, 2, 3), ('Hello', 'World')
+  ```
+
+- `dictionary` or `dict` A collection of mappings between keys and values.
+
+  ```python
+  {'Home': '310-555-5555', 'Office': '951-555-5555'}, {'C': 'do', 'D': 're', 'E': 'mi', 'F': 'fa', 'G': 'sol'}
+  ```
 
 ## Control flow and logical Operators
 
