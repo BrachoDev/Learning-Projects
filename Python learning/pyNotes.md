@@ -256,6 +256,26 @@ A variable can have `string`, `integer`, `float` or `boolean`
 
   Note: the first position is always `[0]`.
 
+- We can count the number of time a value appears in a string by using `count()`
+
+example:
+
+```python
+name = "carlos bracho"
+count = name.count("r")
+#output: 2
+```
+
+- to change letter to lower case we can use `lower()`
+
+Example:
+
+```python
+name = "CARLOS BrachO"
+lower_case = name.lower()
+#output: carlos bracho
+```
+
 ### Integer
 
 - A `integer` is just a value like `1, 2, 3.....n`.
