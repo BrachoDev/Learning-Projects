@@ -28,6 +28,7 @@
 - [Control flow and logical operators](#control-flow-and-logical-operators)
   - [Comparison Operators](#comparison-operators)
   - [if / else](#if--else)
+  - [Nested if and else Statements](#nested-if-and-else-statements)
 
 ## Comments
 
@@ -344,3 +345,45 @@ else:
 ```
 
 - NOTE: it is important to put the indentation after each condition. This is similar to adding `{}` ot `[]` in Javascript's conditions.
+
+### Nested if and else statements:
+
+If we want to check for multiple conditions, we can nest `if / else` statements inside another one to add that extra condition.
+
+Example:
+
+```python
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  age = int(input("What is your age? "))
+  if age <= 18:
+    print("Please pay $7.")
+  else:
+    print("Please pay $12.")
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+```
+
+- In addition, we can use `if/elif/else` to add multiple conditions:
+
+Example:
+
+```python
+print("Welcome to the rollercoaster!")
+height = int(input("What is your height in cm? "))
+
+if height >= 120:
+  print("You can ride the rollercoaster!")
+  age = int(input("What is your age? "))
+  if age <12:
+    print("Please pay $5.")
+  elif age <= 18:
+    print("Please pay $7.")
+  else:
+    print("Please pay $12.")
+else:
+  print("Sorry, you have to grow taller before you can ride.")
+```
