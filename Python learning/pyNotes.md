@@ -32,6 +32,7 @@
   - [Nested if and else Statements](#nested-if-and-else-statements)
   - [Multiple If Statements in Succession](#multiple-if-statements-in-succession)
   - [Logical Operators](#logical-operators)
+- [Common Python Data Visualization and Analysis Tools](#common-python-data-visualization-and-analysis-tools)
 
 ## Comments
 
@@ -514,3 +515,19 @@ Instead of using multiple `if` statements, we can use logical operators to check
   else:
     print("Sorry, you have to grow taller before you can ride.")
   ```
+
+## Common Python data visualization and analysis tools
+
+- `numpy` or `np` is used for `Mathematical functions, required by other libraries` --> [Documentation](https://docs.scipy.org/doc/numpy/reference/)
+
+- `scipy.stats` or `st` is used for `Statistical functions` --> [Documentation](https://docs.scipy.org/doc/scipy/reference/stats.html)
+
+- `pandas` or `pd` is used for `Data frames, statistical functions	` --> [Documentation](https://pandas.pydata.org/pandas-docs/stable/)
+
+- `matplotlib.pyplot` or `plt` is used for `Data visualization` --> [Documentation](https://matplotlib.org/stable/users/index.html)
+
+- `scikit-learn` or `sks` is used for `Machine learning and data analysis` --> [Documentation](https://scikit-learn.org/stable/documentation.html)
+
+- `seaborn` or `sns` is used for `Data visualization` -->[Documentation](https://seaborn.pydata.org/)
+
+- `quandl` is used for `Data analysis` -->[Documentation](https://docs.data.nasdaq.com/v1.0/docs/python-installation)
