@@ -1,3 +1,6 @@
+# INSTRUCTIONS:
+#CREATE A GAME SIMILAR TO https://appbrewery.github.io/python-day3-demo/
+
 print('''
 *******************************************************************************
           |                   |                  |                     |
