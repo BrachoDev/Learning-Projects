@@ -32,6 +32,7 @@
   - [Nested if and else Statements](#nested-if-and-else-statements)
   - [Multiple If Statements in Succession](#multiple-if-statements-in-succession)
   - [Logical Operators](#logical-operators)
+- [Random Module](#random-module)
 - [Common Python Data Visualization and Analysis Tools](#common-python-data-visualization-and-analysis-tools)
 
 ## Comments
@@ -515,6 +516,37 @@ Instead of using multiple `if` statements, we can use logical operators to check
   else:
     print("Sorry, you have to grow taller before you can ride.")
   ```
+
+## Random Module
+
+We can create random `int` or `float` using the `random` module that was create by the Python team to make it easier for developers to create random values. In order to do so, we have to `import` the random module.
+
+- `random.randint(x,y)` creates a random `integer` between two number `x` and `y`
+
+Example:
+
+```python
+import random
+
+a = random.randint(0,10)
+
+print(a)
+# Output: a random number between 0 and 10.
+```
+
+- `random.random()` creates a random `float` between `0` and `1` but never 1.
+
+Example:
+
+```python
+import random
+
+a = random.random() * 5
+print(a)
+#Output: a number between 0 and 4.999999 but not 5
+```
+
+- We can create modules ourselves by creating other python files. In the new python file, we can create variables or other things that can be reused in other python files. that way we can save time and make coding easier
 
 ## Common Python data visualization and analysis tools
 
