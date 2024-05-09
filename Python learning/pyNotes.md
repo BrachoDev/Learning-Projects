@@ -26,6 +26,13 @@
   4. [Boolean](#boolean)
   - [Data Type Conversion](#data-type-conversion)
 - [Data Structures](#data-structures)
+  1. [Set](#set)
+  2. [List](#list)
+  3. [Tuple](#tuple)
+  4. [Dictionary or dict](#dictionary-or-dict)
+
+[**--More about data structures on Python's website**](https://docs.python.org/3/tutorial/datastructures.html)
+
 - [Control flow and logical operators](#control-flow-and-logical-operators)
   - [Comparison Operators](#comparison-operators)
   - [if / else](#if--else)
@@ -342,31 +349,83 @@ We can modify the type of data for each variable using different functions for e
 
 ## Data Structures:
 
+Data struture is a way to organize data in Python.
+
 There are 4 basic python data structures:
 
-- `set` An unordered collection of items.
+### `set`:
+
+An unordered collection of items.
+
+```python
+{1, 2, 3}, { 'First name', 'Last name' }
+```
+
+### `list`:
+
+An ordered collection of changeable items. Two-dimensional arrays can be formed from lists of lists. They use brackets `[]`
+
+Examples:
+
+```python
+fruits = [item1, item2]
+```
+
+```python
+[1, 2, 3], ['Height', 6.1], [ [1, 2], [3, 4] ]
+```
+
+- to select an specific value in a list we can do so by using the variable, brackets and the position were the value is in the list.
+
+  Example:
 
   ```python
-  {1, 2, 3}, { 'First name', 'Last name' }
+  states_of_america = ["Delaware", "Pennsylvania", "Florida"]
+  print(states_of_america[2])
+  #OR
+  print(states_of_america[-1])
+  #Output: Florida
   ```
 
-- `list` An ordered collection of changeable items. Two-dimensional arrays can be formed from lists of lists.
+- To add a value to the list we can use the function `.append()`
+
+  Example:
 
   ```python
-  [1, 2, 3], ['Height', 6.1], [ [1, 2], [3, 4] ]
+  states_of_america = ["Delaware", "Pennsylvania", "Florida"]
+  states_of_america.append("Bracholand")
+  print(states_of_america)
+  #output ['Delaware', 'Pennsylvania', 'Florida', 'Bracholand']
   ```
 
-- `tuple` An ordered collection of unchangeable items.
+- to add multiple values we use `.extend()`
+
+  Example:
 
   ```python
-  (1, 2, 3), ('Hello', 'World')
+  states_of_america = ["Delaware", "Pennsylvania", "Florida"]
+  states_of_america.extend(["Bracholand", "Camille Land"])
+  print(states_of_america)
+  #Output: ['Delaware', 'Pennsylvania', 'Florida', 'Bracholand', 'Camille Land']
   ```
 
-- `dictionary` or `dict` A collection of mappings between keys and values.
+### `tuple`:
 
-  ```python
-  {'Home': '310-555-5555', 'Office': '951-555-5555'}, {'C': 'do', 'D': 're', 'E': 'mi', 'F': 'fa', 'G': 'sol'}
-  ```
+An ordered collection of unchangeable items.
+
+```python
+(1, 2, 3), ('Hello', 'World')
+```
+
+### `dictionary` or `dict`:
+
+A collection of mappings between keys and values.
+
+```python
+{'Home': '310-555-5555', 'Office': '951-555-5555'}, {'C': 'do', 'D': 're', 'E': 'mi', 'F': 'fa', 'G': 'sol'}
+```
+
+[**To lear more about List and other Data Structures use this link**](https://docs.python.org/3/tutorial/datastructures.html)
 
 ## Control flow and logical Operators
 
