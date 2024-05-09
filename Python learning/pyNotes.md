@@ -409,6 +409,18 @@ fruits = [item1, item2]
   #Output: ['Delaware', 'Pennsylvania', 'Florida', 'Bracholand', 'Camille Land']
   ```
 
+- We can use nested list to combine lists. This is basically lists inside a bigger list.
+
+Example:
+
+```python
+fruits = ["Strawberries", "Nectarines", "Apples"]
+vegetables = ["Spinach", "kale", "Tomatoes"]
+combination = [fruits, vegetables]
+print(combination)
+#[['Strawberries', 'Nectarines', 'Apples'], ['Spinach', 'kale', 'Tomatoes']]
+```
+
 ### `tuple`:
 
 An ordered collection of unchangeable items.
