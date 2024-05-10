@@ -155,4 +155,4 @@ plt.show()
 
 This code will return a tables similar to this:
 
-![Line plot chart example](libraries_assets/line_chart.png)
+![Line plot chart example](libraries_assets/line_plot_chart.png)
