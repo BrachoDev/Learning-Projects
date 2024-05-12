@@ -43,6 +43,7 @@
 - [Common Python Data Visualization and Analysis Tools](#common-python-data-visualization-and-analysis-tools)
 - [Loops](#loops)
   - [using the for loop with python lists](#using-the-for-loop-with-python-lists)
+  - [For loops and the range() function](#for-loops-and-the-range-function)
 
 ## Comments
 
@@ -659,3 +660,46 @@ apple
 banana
 cherry
 ```
+
+### for loops and the range() function
+
+The `range()` function in Python is a handy tool for generating sequences of numbers. It's particularly useful when you're working with loops, as it allows you to easily iterate through a specific range of numbers.
+
+Example:
+
+```python
+for number in range(1,10):# it excludes the last digit
+    print(number)
+```
+
+Output:
+
+```
+1
+2
+3
+4
+5
+6
+7
+8
+9
+```
+
+- We can also create a step which skips a set number of items in the list:
+
+  Example:
+
+  ```python
+  for number in range(1,11,3):
+      print(number)
+  ```
+
+  Output:
+
+  ```
+  1
+  4
+  7
+  10
+  ```
