@@ -41,6 +41,8 @@
   - [Logical Operators](#logical-operators)
 - [Random Module](#random-module)
 - [Common Python Data Visualization and Analysis Tools](#common-python-data-visualization-and-analysis-tools)
+- [Loops](#loops)
+  - [using the for loop with python lists](#using-the-for-loop-with-python-lists)
 
 ## Comments
 
@@ -634,3 +636,26 @@ print(a)
 - `seaborn` or `sns` is used for `Data visualization` -->[Documentation](https://seaborn.pydata.org/)
 
 - `quandl` is used for `Data analysis` -->[Documentation](https://docs.data.nasdaq.com/v1.0/docs/python-installation)
+
+## Loops
+
+### Using the for loop with Python lists
+
+A for loop is used to iterate over a sequence of items in an automated way.
+
+Example:
+
+```python
+fruits = ["apple", "banana", "cherry"]
+
+for fruit in fruits: #fruit represents each item in the fruits list
+  print(fruit)
+```
+
+This code will print:
+
+```
+apple
+banana
+cherry
+```
