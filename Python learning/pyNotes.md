@@ -289,6 +289,12 @@ lower_case = name.lower()
 #output: carlos bracho
 ```
 
+- We can split a strin into a list of substrings by using the `.split()` method.
+
+Example:
+
+
+
 ### Integer
 
 - A `integer` is just a value like `1, 2, 3.....n`.
