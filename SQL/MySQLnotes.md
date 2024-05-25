@@ -34,77 +34,77 @@ Table of content:
 
 - `CREATE DATABASE database_name;` Is used to create a database.
 
-  ![CREATE DATABASE Example](/SQL%20and%20MySQL%20documentation/assets/CREATE%20DATABASE.png)
+  ![CREATE DATABASE Example](/SQL/assets/CREATE%20DATABASE.png)
 
 - `SHOW DATABASES;` Is used to show available databases.
 
-  ![SHOW DATABASES EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SHOW%20DATABASES.png)
+  ![SHOW DATABASES EXAMPLE](/SQL/assets/SHOW%20DATABASES.png)
 
 - `USE;` tells MySQL to use the named database as the default (current) database for subsequent statements.
 
-  ![USE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/USE.png)
+  ![USE EXAMPLE](/SQL/assets/USE.png)
 
 ### Create a table:
 
 - `CREATE TABLE;` Creates a table within the database.
 
-  ![CREATE TABLE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/CREATE%20TABLE.png)
+  ![CREATE TABLE EXAMPLE](/SQL/assets/CREATE%20TABLE.png)
 
 - `SHOW TABLES;` Show the available tables in the database.
 
-  ![SHOW TABLES EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SHOW%20TABLES.png)
+  ![SHOW TABLES EXAMPLE](/SQL/assets/SHOW%20TABLES.png)
 
 - `DESCRIBE` retrieve information about a table's structure, including column names, data types, and constraints.
 
-  ![DESCRIBE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/DESCRIBE.png)
+  ![DESCRIBE EXAMPLE](/SQL/assets/DESCRIBE.png)
 
 - `PRIMARY KEY` is used to define a primary key which acts as a unique identifier for each row. An exmaple of this is a Customer ID or Employee ID.
 
-  ![PRIMARY KEY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/PRIMARY%20KEY.png)
+  ![PRIMARY KEY EXAMPLE](/SQL/assets/PRIMARY%20KEY.png)
 
 - `FOREIGN KEY (ColumnName1) REFERENCES TableName(ColumnName2)` creates a `FOREIGN KEY` that establishes a link to another table's columns.
 
-  ![FOREIGN KEY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/FOREIGN%20KEY.png)
+  ![FOREIGN KEY EXAMPLE](/SQL/assets/FOREIGN%20KEY.png)
 
   #### DATA TYPES:
 
   - When creating a TABLE we can specify what type of data each column will hold using Data Types. The table below is all the available Data types:
 
-    ![DATA TYPES TABLE](/SQL%20and%20MySQL%20documentation/assets/DATA%20TYPE%20TABLE.png)
+    ![DATA TYPES TABLE](/SQL/assets/DATA%20TYPE%20TABLE.png)
 
 ### Alter a table:
 
 - `ALTER TABLE` is used to `ADD`, `DELETE`, or `MODIFY` columns in an existing table.
 
-  ![ALTER TABLE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE.png)
+  ![ALTER TABLE EXAMPLE](/SQL/assets/ALTER%20TABLE.png)
 
   If we `DESCRIBE` the table this is how it will look:
 
-  ![ALTER TABLE DESCRIBED](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE%20DESCRIBE%20EXAMPLE.png)
+  ![ALTER TABLE DESCRIBED](/SQL/assets/ALTER%20TABLE%20DESCRIBE%20EXAMPLE.png)
 
 - `ALTER TABLE table_name RENAME` Allows us to modify the name of tables.
 
-  ![ALTER TABLE RENAME](/SQL%20and%20MySQL%20documentation/assets/ALTER%20TABLE%20RENAME.png)
+  ![ALTER TABLE RENAME](/SQL/assets/ALTER%20TABLE%20RENAME.png)
 
 - To change the values of specific rows, you can use the `UPDATE` statement. We also have to specify the column and row that needs to be updated by using `SET` and `WHERE`
 
-  ![UPDATE SET WHERE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/UPDATE%20SET%20WHERE.png)
+  ![UPDATE SET WHERE EXAMPLE](/SQL/assets/UPDATE%20SET%20WHERE.png)
 
 ### Insert records to table:
 
 - `INSERT INTO Table_Name VALUES` Allows us to insert records in a table. Each line going from left to right is a record. Each line going from top to bottom is a column.
 
-  ![INSERT INTO table VALUES exmaple](/SQL%20and%20MySQL%20documentation/assets/INSERT%20INTO%20table%20VALUES.png)
+  ![INSERT INTO table VALUES exmaple](/SQL/assets/INSERT%20INTO%20table%20VALUES.png)
 
 ### Select data from a table:
 
 - `SELECT * FROM Table_Name`in MySQL is used to retrieve all data from the table and shows it.
 
-  ![SELECT FROM table EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table.png)
+  ![SELECT FROM table EXAMPLE](/SQL/assets/SELECT%20FROM%20table.png)
 
   We can also `SELECT` especific columns by especifying them instead of using `*`:
 
-  ![SELECT FROM table EXAMPLE 2](/SQL%20and%20MySQL%20documentation/assets/SELECT%20FROM%20table%202.png)
+  ![SELECT FROM table EXAMPLE 2](/SQL/assets/SELECT%20FROM%20table%202.png)
 
 - To retrieve record count from a table (number of rows) use `COUNT` function, like so:
 
@@ -113,7 +113,7 @@ Table of content:
 - The `GROUP BY` clause is used to organize data into groups based on shared values in one or more columns.
 - The `ORDER BY` clause is used to sort the results retrieved by a SELECT statement. It arranges the data in a specific order, making it easier to analyze and interpret.
 
-  ![GROUP BY AND ORDER BY EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/GROUP%20BY%20AND%20ORDER%20BY.png)
+  ![GROUP BY AND ORDER BY EXAMPLE](/SQL/assets/GROUP%20BY%20AND%20ORDER%20BY.png)
 
 #### Operators:
 
@@ -149,13 +149,13 @@ Table of content:
 
 - We can use math to make calculations and create view and/or tables with calculated fields.
   - In this example we are getting the percentage that SKU items represent in the database:
-    ![SELECT PERCENTAGE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SELECT%20PERCENTAGE.png)
+    ![SELECT PERCENTAGE EXAMPLE](/SQL/assets/SELECT%20PERCENTAGE.png)
 
 ### Create a View:
 
 - A `VIEW` contains rows and columns, just like a real table. The fields in a view are fields from one or more real tables in the database. This helps use pull data from multiple tables and make them easier to read.
 
-  ![CREATE VIEW EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/CREATE%20VIEW.png)
+  ![CREATE VIEW EXAMPLE](/SQL/assets/CREATE%20VIEW.png)
 
   NOTE: Notice that `VIEW` essentially creates a new table. In this example it is called Collaborator.
 
@@ -165,23 +165,23 @@ Table of content:
 
 - This is the most fundamental join type. It returns only rows where there's a match in both tables based on the join condition.
 
-  ![INNER JOIN TABLE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20TABLE.png)
+  ![INNER JOIN TABLE EXAMPLE](./assets/INNER%20JOIN%20TABLE.png)
 
   This is a SELECT Statement that uses `INNER JOIN` to join Department and Employee tables. Also `ON` is the condition `INNER JOIN` follows. In this case, the Department_ID from these two table must be equal.
 
   NOTES: Notice how we use `WHERE` to especify which department we want; however, we can also use `OR` to add another value.
 
-  ![INNER JOIN EXMAPLE WITH OR](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20WITH%20OR.png)
+  ![INNER JOIN EXMAPLE WITH OR](./assets/INNER%20JOIN%20WITH%20OR.png)
 
 - Another way to select specific values is using `IN` in the `WHERE` clause.
 
-  ![INNER JOIN EXAMPLE WITH IN](/SQL%20and%20MySQL%20documentation/assets/INNER%20JOIN%20WITH%20IN.png)
+  ![INNER JOIN EXAMPLE WITH IN](./assets/INNER%20JOIN%20WITH%20IN.png)
 
 ### Creating a CSV File:
 
 - Using the `SELECT INTO OUTFILE`: This SQL statement allows you to retrieve data from a table and write it to a file on the MySQL server. You can specify the file format as CSV in the statement.
 
-  ![SELECT INTO OUTFILE EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/SELECT%20INTO%20OUTFILE.png)
+  ![SELECT INTO OUTFILE EXAMPLE](./assets/SELECT%20INTO%20OUTFILE.png)
 
 - STEPS to Creating a CSV File:
 
@@ -190,13 +190,13 @@ Table of content:
   3. Type `ls` and press Enter. This will show us a list of files
   4. Type the name of the file we want to print and press Enter.
 
-  ![STEPS FOR PRINTING CSV FILE](/SQL%20and%20MySQL%20documentation/assets/PRINTING%20CSV%20FILE%20STEPS.png)
+  ![STEPS FOR PRINTING CSV FILE](./assets/PRINTING%20CSV%20FILE%20STEPS.png)
 
 ### Delete Records:
 
 - `DELETE FROM` statement removes rows from a specified table based on some condition(s).
 
-  ![DELETE FROM EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/DELETE%20FROM.png)
+  ![DELETE FROM EXAMPLE](./assets/DELETE%20FROM.png)
 
 ### Import Data From CSV file:
 
@@ -205,4 +205,4 @@ Table of content:
 - USE `FIELDS TERMINATED BY ','` This specifies what character separates fields within each record, in this case it's a comma.
 - `LINES TERMINATED BY '\r\n'` This option defines how different rows are separated in the CSV file.
 
-  ![IMPORT CSV FILES EXAMPLE](/SQL%20and%20MySQL%20documentation/assets/IMPORT%20CSV%20FILE.png)
+  ![IMPORT CSV FILES EXAMPLE](./assets/IMPORT%20CSV%20FILE.png)

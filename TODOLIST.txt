@@ -1,0 +1,5 @@
+TO DO LIST:
+- Create a CSS only folder that contains CSS learning
+- Create a HTML only folder that contains HTML learning
+- Create a JavaScript only folder that contains JavaScript learning
+- AFTER I DO THE ABOVE STEPS DELETE THE UDEMY COURSE folder
