@@ -44,6 +44,8 @@
 - [Loops](#loops)
   - [using the for loop with python lists](#using-the-for-loop-with-python-lists)
   - [For loops and the range() function](#for-loops-and-the-range-function)
+- [Functions](#functions)
+  - [Defining functions](#defining-functions)
 
 ## Comments
 
@@ -292,8 +294,6 @@ lower_case = name.lower()
 - We can split a strin into a list of substrings by using the `.split()` method.
 
 Example:
-
-
 
 ### Integer
 
@@ -708,4 +708,22 @@ Output:
   4
   7
   10
+  ```
+
+## Functions
+
+### Defining functions:
+
+- We can create our own functions by using `def` and giving it a name like `my_function()`
+
+- It is very similar to loops were the instructions are located indented under `def`
+
+  Example:
+
+  ```python
+  def my_function():
+    print('Hello User')
+
+    my_function() # We have to call in the function if we want it to work
+  ### This will output the messafe 'Hello User'
   ```
