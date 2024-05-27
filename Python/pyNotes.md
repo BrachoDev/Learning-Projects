@@ -44,6 +44,7 @@
 - [Loops](#loops)
   - [using the for loop with python lists](#using-the-for-loop-with-python-lists)
   - [For loops and the range() function](#for-loops-and-the-range-function)
+  - [while loops](#while-loops)
 - [Functions](#functions)
   - [Defining functions](#defining-functions)
 
@@ -710,6 +711,31 @@ Output:
   10
   ```
 
+### While loops
+
+- These types of loops will do something while a certain condition is true.
+
+  Example: 
+    ```python
+    i = 0
+    while i <= 10:
+        print(i)
+        i += 1
+    ```
+  Output:
+    ```python
+    0
+    1
+    2
+    3
+    4
+    5
+    6
+    7
+    8
+    9
+    10
+    ```
 ## Functions
 
 ### Defining functions:
