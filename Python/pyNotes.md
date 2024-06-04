@@ -47,6 +47,7 @@
   - [while loops](#while-loops)
 - [Functions](#functions)
   - [Defining functions](#defining-functions)
+  - [Functions with Inputs](#functions-with-inputs)
 
 ## Comments
 
@@ -753,3 +754,22 @@ Output:
     my_function() # We have to call in the function if we want it to work
   ### This will output the messafe 'Hello User'
   ```
+
+### Functions with inputs:
+
+- We can pass a value inside the parethesis `()` in a function, so we can change its value everytime we run our function.
+
+  Example:
+  ```python
+  def greet_with_name(name):
+    print(f'Hello {name}')
+    print(f"How do you do {name}?")
+  greet_with_name('Carlos')
+  ```
+  ```python
+  Output: 
+    Hello Carlos
+    How do you do Carlos?
+  ```
+
+- the variable `inside_the(parethesis)` is callaed a `parameter`. The value we give it when the function is called is named `argument`.
