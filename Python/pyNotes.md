@@ -796,3 +796,12 @@ Output:
   Hello Carlos
   What is it like in Venezuela?
   ```
+
+  In addition to that we can use `keyword` arguments to assign the variables a value this way as well:
+
+  ```python
+  def greet_with_name(name,location):
+    print(f'Hello {name}')
+    print(f"What is it like in {location}?")
+  greet_with_name(name = 'Carlos',location = 'Venezuela') # Adding keywords' name equal the values we want to use
+  ```
