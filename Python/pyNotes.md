@@ -716,27 +716,31 @@ Output:
 
 - These types of loops will do something while a certain condition is true.
 
-  Example: 
-    ```python
-    i = 0
-    while i <= 10:
-        print(i)
-        i += 1
-    ```
+  Example:
+
+  ```python
+  i = 0
+  while i <= 10:
+      print(i)
+      i += 1
+  ```
+
   Output:
-    ```python
-    0
-    1
-    2
-    3
-    4
-    5
-    6
-    7
-    8
-    9
-    10
-    ```
+
+  ```python
+  0
+  1
+  2
+  3
+  4
+  5
+  6
+  7
+  8
+  9
+  10
+  ```
+
 ## Functions
 
 ### Defining functions:
@@ -757,19 +761,38 @@ Output:
 
 ### Functions with inputs:
 
-- We can pass a value inside the parethesis `()` in a function, so we can change its value everytime we run our function.
+- We can pass a value inside the parethesis `()` in a function, so we can change its value everytime we run our function. This is called a `parameter`
 
   Example:
+
   ```python
   def greet_with_name(name):
     print(f'Hello {name}')
     print(f"How do you do {name}?")
   greet_with_name('Carlos')
   ```
+
   ```python
-  Output: 
+  Output:
     Hello Carlos
     How do you do Carlos?
   ```
 
 - the variable `inside_the(parethesis)` is callaed a `parameter`. The value we give it when the function is called is named `argument`.
+
+- We can also add multiple `parameter` tot he function:
+
+  Example:
+
+  ```python
+  def greet_with_name(name,location):
+    print(f'Hello {name}')
+    print(f"What is it like in {location}?")
+  greet_with_name('Carlos','Venezuela')
+  ```
+
+  ```python
+  Output:
+  Hello Carlos
+  What is it like in Venezuela?
+  ```
