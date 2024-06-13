@@ -448,6 +448,28 @@ A collection of mappings between keys and values.
 {'Home': '310-555-5555', 'Office': '951-555-5555'}, {'C': 'do', 'D': 're', 'E': 'mi', 'F': 'fa', 'G': 'sol'}
 ```
 
+- You can create a dictionary by enclosing key-value pairs in curly braces `{}`, with a colon `:` separating keys and values, and commas `,` separating each pair.
+
+  ```python
+  # Empty dictionary
+  my_dict = {}
+
+  # Dictionary with some data
+  my_dict = {
+      'name': 'Alice',
+      'age': 25,
+      'city': 'New York'
+  }
+  ```
+
+- You can add new key-value pairs to the dictionary by assigning a value to a new key.
+
+  ```python
+  my_dict['email'] = 'alice@example.com'
+  print(my_dict)
+  # Output: {'name': 'Alice', 'age': 26, 'city': 'New York', 'email': 'alice@example.com'}
+  ```
+
 [**To lear more about List and other Data Structures use this link**](https://docs.python.org/3/tutorial/datastructures.html)
 
 ## Control flow and logical Operators
