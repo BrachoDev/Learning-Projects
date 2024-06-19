@@ -48,6 +48,8 @@
 - [Functions](#functions)
   - [Defining functions](#defining-functions)
   - [Functions with Inputs](#functions-with-inputs)
+- [Working with Files in Python](#working-with-files-in-python)
+  - [Using with Statement](#using-with-statement)
 
 ## Comments
 
@@ -826,4 +828,41 @@ Output:
     print(f'Hello {name}')
     print(f"What is it like in {location}?")
   greet_with_name(name = 'Carlos',location = 'Venezuela') # Adding keywords' name equal the values we want to use
+  ```
+
+## Working with Files in Python
+
+- To open a file, you use the `open()` function. This function returns a file object, which you can then use to read or write to the file.
+
+  ```python
+  file = open('filename.txt', 'mode')
+  ```
+
+  NOTE: the `mode` is the mode in which we want to open the file.
+
+- Common modes are:
+
+  - `r` for reading (default)
+  - `w` for writing (truncates the file if it exists)
+  - `a` for appending (adds to the end of the file if it exists)
+  - `b` for binary mode (useful for non-text files like images)
+  - `+` to update (reading and writing)
+
+- IMPORTANT: Close the file after using it. For example:
+
+  ```python
+  file = open('filename.txt', 'w')
+  file.write('Hello, world!')
+  file.close()
+  ```
+
+### Using `with` Statement
+
+- Using the `with` statement to open a file is a good practice because it ensures that the file is properly closed after its suite finishes, even if an exception is raised.
+
+  ```python
+  with open('filename.txt', 'r') as file:
+      content = file.read()
+      print(content)
+  # File is automatically closed after the with block
   ```
