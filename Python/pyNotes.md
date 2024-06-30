@@ -50,6 +50,9 @@
   - [Functions with Inputs](#functions-with-inputs)
 - [Working with Files in Python](#working-with-files-in-python)
   - [Using with Statement](#using-with-statement)
+- [Python Object oriented Programming](#python-object-oriented-programming)
+  - [Class and Attributes](#class-and-attributes)
+  - [methods](#methods)
 
 ## Comments
 
@@ -865,4 +868,96 @@ Output:
       content = file.read()
       print(content)
   # File is automatically closed after the with block
+  ```
+
+## Python Object Oriented Programming
+
+- First, an object is a "bundle" of related `attributes` (variables) and `methods` (functions)
+  EX of objects = phone, cup, book
+  - Attributes (similar to variables):
+    - can be the version of the phone ot its price.
+    - the liquid inside the cup can also be considered an attribute.
+    - the number of pages in book is also an attribute.
+  - Methods (similar to functions):
+    - In the case of a phone. A methods is that it can `make_calls()`, `receive_calls()`, `send_text()` etc.
+    - For cup. We can `drink_cup()`, `fill_cup()` or `empty_cup()`.
+    - With books. We can `close_book`, `read_book()`, `open_book()`
+
+### Class and attributes:
+
+- We need a `class` to create many objects. Also, a `class` is considered a blueprint used to design the structure and layout of an oject.
+
+  ```python
+  class Car: # declaring a class. This is also our object.
+    def __init__(self, model, year, color, for_sale): #This is the constructor method, and it is needed to create objects.
+      # Declaring attributes for the Car object:
+      self.model = model
+      self.year = year
+      self.color = color
+      self.for_sale = for_sale
+
+  # Creating variables that are assigned to the object. Notice that the `self` parameter is not included as this is done for us
+  car1 = Car("Mustang", 2024, "red", False)
+  car2 = Car("Corvette", 2025, "blue", True)
+  car3 = Car("Charger", 2026, "yellow", True)
+
+  #accesing the values for car2:
+  print(car2.model)
+  print(car2.year)
+  print(car2.color)
+  print(car2.for_sale)
+  ```
+
+- IMPORTANT: If we have too many `classes`, this may end up covering a lot of space. It is good practice to create a separate python file for classes and import them into our `main` python file. For example:
+
+  ```python
+  from car import Car # Importing the class Car() from the `car` file.
+
+  car1 = Car("Mustang", 2024, "red", False)
+  car2 = Car("Corvette", 2025, "blue", True)
+  car3 = Car("Charger", 2026, "yellow", True)
+
+  print(car2.model)
+  print(car2.year)
+  print(car2.color)
+  print(car2.for_sale)
+  ```
+
+### Methods:
+
+- `methods` are the actions that our `objects` can perform. This is created like a function inside the class.
+
+  For this class:
+
+  ```python
+  class Car:
+      def __init__(self, model, year, color, for_sale):
+          self.model = model
+          self.year = year
+          self.color = color
+          self.for_sale = for_sale
+
+      # Methods for a car
+      def drive(self): # Method to drive car
+          print(f"You drive the {self.color} {self.model}")
+
+      def stop(self): # Method to stop car
+          print(f"You stop the {self.color} {self.model}")
+
+      def describe(self): # Method to describe the car
+          print(f"{self.year} {self.color} {self.model}")
+  ```
+
+  Calling the methods in the class `Car()` for car3:
+
+  ```python
+  from car import Car
+
+  car1 = Car("Mustang", 2024, "red", False)
+  car2 = Car("Corvette", 2025, "blue", True)
+  car3 = Car("Charger", 2026, "yellow", True)
+
+  car3.describe() # Calling the describe() method
+  car3.drive() # Calling the drive() method
+  car3.stop() # Calling the stop() method
   ```
